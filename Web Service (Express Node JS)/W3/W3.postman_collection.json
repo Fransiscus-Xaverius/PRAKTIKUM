@@ -1,0 +1,273 @@
+{
+	"info": {
+		"_postman_id": "df6cdc51-6a5c-4fe5-8d42-67e1d9d787a4",
+		"name": "W3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test Func",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "No.1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "xva@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "nama",
+							"value": "Gloria Eun Musa",
+							"type": "default"
+						},
+						{
+							"key": "jenis_kelamin",
+							"value": "P",
+							"type": "default"
+						},
+						{
+							"key": "nomor_HP",
+							"value": "0811111111",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "cobalagi",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No. 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "EX00002",
+							"type": "default"
+						},
+						{
+							"key": "nama",
+							"value": "Event Wibu",
+							"type": "default"
+						},
+						{
+							"key": "deskripsi",
+							"value": "Ndak tau sih gabut",
+							"type": "default"
+						},
+						{
+							"key": "lokasi",
+							"value": "Di taman",
+							"type": "default"
+						},
+						{
+							"key": "tanggal",
+							"value": "10/03/2032",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/event",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No. 3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "Event capek pengen gila",
+							"type": "default"
+						},
+						{
+							"key": "deskripsi",
+							"value": "kalau ndak bisa yasudahlah ya",
+							"type": "default"
+						},
+						{
+							"key": "lokasi",
+							"value": "pinggir jalan",
+							"type": "default"
+						},
+						{
+							"key": "tanggal",
+							"value": "01/01/2024",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/event/EV00004",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"event",
+						"EV00004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No. 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/event/all",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"event",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No. 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/event?nama=aaaaa&lokasi=ndkatau",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"event"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "aaaaa"
+						},
+						{
+							"key": "lokasi",
+							"value": "ndkatau"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No. 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id_user",
+							"value": "EX00001",
+							"type": "default"
+						},
+						{
+							"key": "id_event",
+							"value": "EV00004",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/event/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"event",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "No.7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/event?nama=KSP&lokasi=n",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"event"
+					],
+					"query": [
+						{
+							"key": "nama",
+							"value": "KSP"
+						},
+						{
+							"key": "lokasi",
+							"value": "n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
