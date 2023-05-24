@@ -1,0 +1,44 @@
+Notes!
+Pada project ini saya menggunakan array of object, dan juga menggunakan break sebagai sarana untuk menghentikan loop ketika sebuah loop telah
+berhasil melakukan tugasnya.
+
+Array of Object:
+Array of Object = adalah sebuah array (sama dengan array tipe data yang biasa dipakai (Array of integer, char, String, dll)) yang digunakan untuk
+menyimpan sejumlah Object (jumlah Object yang di simpan sesuai dengan ukuran array) dalam nama yang sama. Pengaksesan dari array of object sendiri juga
+sama persis dengan array pada umumnya dimana diperlukan index disimpannya sebuah object tertentu untuk mengakses object yang dimaksud. Namun, perbedaannya
+jika pada array tipe data biasa,data yang disimpan array bisa langsung diakses tanpa adanya function dari Class Object seperti pada bawah ini:
+
+Pada array s yang bertipe data string index ke 5 terdapat nilai "Hallo".
+Maka untuk melakukan print "hallo" kita dapat melakukan seperti ini:
+System.out.println(s[5]);
+
+Namun jika kita ingin mengakses array of Objects, maka yang kita lakukan adalah kita harus menggunakan function pada Class object tersebut. Diantaranya adalah
+function Accessor/Mutator (Getter/Setter), selain itu ketika kita melakukan deklarasi, kita juga harus memberikan deklarasi bahwa setiap elemen pada array tersebut
+adalah sebuah object baru. Contoh:
+
+Untuk mendeklarasikan array of object baru:
+Troop[] troops = new Troop[3]; //Line 661 pada Java Main Class tugas W2 saya.
+Pada line diatas kita dapat melihat bahwa pertama kita deklarasikan array of Object yang dimana object yang digunakan adalah Object Troop dan nama dari array tersebut adalah troops.
+kita memberi tahu bahwa array troops yang dideklarasikan tadi terdiri dari 3 elemen (Sizenya 3, dan elemennya adalah 3) yang dimana setiap elemennya adalah sebuah Object baru.
+
+Untuk mengisi data untuk pertama kalinya pada sebuah elemen dalam array of object, kita harus mendeklarasikan sekali lagi bahwa Object dalam array tersebut adalah Object baru:
+troops[0] = new Troop("Support Unit", 5, 5, 'S', 5, 6, 5);
+Setelah melakukan hal tersebut, kita masukkan kedalam parameter Constructor (yang dibuat pada class Object) data-data yang ingin kita masukkan pada elemen Object yang ditunjuk.
+
+Untuk melakukan akses pada data yang disimpan pada object tersebut, maka kita dapat tulis sebagai berikut:
+troops[i].getY()
+Dimana pada syntax diatas, kita memberitahu java bahwa kita ingin mengakses element yang berupa object ke-i pada array of Objects yang bernama "troops".
+kemudian kita memberitahu bahwa kita ingin mengakses data pada private int Y dengan cara menggunakan function accesssor yang bernama "get" yang telah kita build.
+Tujuan dari function tersebut adalah dia akan melakukan return value private int Y yang tersimpan pada element yang berupa object pada index i.
+
+Break:
+Break adalah sebuah syntax yang dapat digunakan untuk keluar dari sebuah loop ketika suatu kondisi sudah terpenuhi. Saya menggunakan break pada program saya kali ini
+untuk keluar dari beberapa loop ketika loop-loop tersebut telah memenuhi beberapa kondisi.
+Contoh penggunaan dari break :
+for (int i =0;i<10;i++){
+	if(i==4){
+		break;
+	}
+}
+pada loop diatas ditemui perintah break yang akan terjadi bila i sama dengan 4 maka program tersebut akan keluar dari loop begitu integer i sama dengan 4 dan kemudian melanjutkan
+ke sequence selanjutnya.

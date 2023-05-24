@@ -1,0 +1,46 @@
+Polymorphism
+adalah sebuah konsep dimana suatu class yang menjadi sebuah parent class/ super class dapat memiliki banyak bentuk/method yang berbeda-beda.
+Saya menggunakan polymorphism untuk membuat parent class saya(Class "UrMom") yang adalah dasar/parent dari class setiap unit agar bisa di override/digantikan/ditindih methodnya
+oleh child classnya. Pemakaiannya dimulai pada main class saya, dimana saya membuat sebuah arraylist class "UrMom" dengan nama units yang merupakan class parent untuk beberapa class lainnya 
+yaitu class Assault, Support, Engineer, dan Heavy. Arraylist Class UrMom yang bernama units tadi saya isi dengan beberapa bentuk dari child class tadi (Assault, Support, Engineer, dan Heavy).
+Caranya adalah sebagai berikut :
+units.add(new Support(5,6,5,5,"Support Unit"));
+units.add(new Assault(4,5,3,5,"Assault Trooper"));
+units.add(new Heavy(6,5,4,5,"Heavy Mech"));
+units.add(new Engineer(5,4,4,5,"Tech Engineer"));
+
+Setelah di add, maka arraylist parent class tadi akan memiliki isi 1 object subclass Support, 1 object subclass Assault, 1 object subclass Heavy, 1 object subclass Engineer
+yang masing masing memiliki method Special_1 dan Special_2 dengan parameter yang sama. 
+Disini polymorphism memperbolehkan method Special_1 dan Special_2 saya untuk memiliki beberapa bentuk yang berbeda disaat yang bersamaan, tergantung dari subclass yang menjadi dasar dari sebuah object tersebut.
+Contoh ketika saya melakukan call method Special_1 pada Support, maka Object Support saya akan melakukan call method Special_1 yang di override, dimana pada method yang telah di override tersebut maka, Support melakukan heal.
+Sementara ketika saya call method Special_1 pada Engineer, maka Object Engineer saya akan melakukan call method Special_1 yang telah di override dengan method subclassnya, yang melakukan deploy barbed wire.
+Contoh cara overidding
+
+--Pertama kita bentuk method pada main class
+public void Special_1(ArrayList<UrMom> units, int dex, ArrayList<Zombie> mob, ArrayList<Wire> wires){
+        
+    }
+--kemudian kita lakukan overriding pada method subclass
+--pastikan method pada mainclass memiliki argumen/parameter yang sama dengan method pada subclass yang melakukan overriding.
+@Override --menandakan Overriding method
+    public void Special_1(ArrayList<UrMom> units, int index,ArrayList<Zombie> mob, ArrayList<Wire> wires){ 
+        System.out.println("Which unit do you want to heal?");
+        System.out.println("1. Support Unit");
+        System.out.println("2. Assault Trooper");
+        System.out.println("3. Heavy Mech");
+        System.out.println("4. Tech Engineer");
+        System.out.print(">>");
+        int dex = sc.nextInt();
+        int max = units.get(dex).getMaxHp();
+        int currentHp = units.get(dex).getHp();
+        int newHp = currentHp+=3;
+        if(max<newHp){
+            units.get(dex).setHp(max);
+        }
+        else{
+            units.get(dex).setHp(newHp);
+        }
+        int currentbar = units.get(dex).getSpecialbar();
+        currentbar-=3;
+        units.get(dex).setSpecialbar(currentbar);
+    }

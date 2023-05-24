@@ -1,0 +1,29 @@
+NOTES TUGAS PRAKTIKUM PBO L204
+FRANSISCUS XAVERIUS 221116955
+
+String.format : adalah built-in function dari String pada java yang dapat digunakan untuk melakukan formatting pada string. Sebenarnya String.format sendiri
+sangat mirip dengan fungsi pada bahasa C, yaitu printf. Penggunaannya pun cukup mirip pada printf di bahasa C. Dibawah ini akan diberikan contoh berserta penjelasan
+step-by-step untuk penggunaannya.
+Contoh penggunaan String.format pada java :
+	for (int i=0;i<count;i++){
+                int z = i+1;
+                String hasil = String.format("#  %d"+". "+"%-13s#\n",z,wordlist[i]);
+                System.out.printf(hasil);
+            }
+	Penggunaannya adalah pertama kita buat sebuah variable string bernama hasil dan mengisinya dengan string yang sudah di format, untuk melakukan hal itu
+	pertama kita masukkan syntax String.format untuk memberitahu java bahwa kita sedang membuat String yang akan diformat dengan ketentuan sendiri dan kemudian
+	didalam bracketnya kita masukkan pembatas dulu yg mana pada tugas Week 1 adalah # diikuti dengan %d yang merupakan penanda bahwa disitu akan ditaruh sebuah
+	nilai desimal/integer. Selanjutnya kita akan tutup tanda kutip tadi untuk menandakan bahwa bagian string tersebut sudah berakhir dan kita tulis + sebagai tanda
+	bahwa kita akan menambahkan string tadi dengan string lainnya yang hanya berisi sebuah . (titik). Kita ulang lagi penutupan string tadi dengan menambahkan tanda
+	kutip penutup, dan kemudian baru kita tambahkan string lain yang diformat ("%-13s#\n") yang mana %s digunakan untuk menandai bahwa variable yang akan digunakan
+	akan berupa string dan ditengahnya terdapat -13 yang dapat diartikan sebagai kita memberitahu java bahwa max length dari string yang akan digunakan adalah 13 character
+	jika string tersebut tidak mencapai 13 characters, maka yang dilakukan adalah java akan memprint " "(spasi) untuk setiap char yang kosong. Jika dilihat dari penjelasan ini
+	maka jika contoh z = 1 dan wordlist[i] adalah "tes", maka output program adalah sebagai berikut:
+	
+	_ = spasi/blank space dari %-13s
+	
+	#  1. tes__________ # <-blank space sebanyak 10x karena string "tes" memiliki length 3.
+	
+	sementara untuk contoh kedua dimana z =2 dan wordlist adalah "iniadalahtes", output program akan menjadi seperti berikut:
+	
+	#  2. iniadalahtes_ # <-blank space hanya sekali karena string "iniadalahtes" memiliki length 12.

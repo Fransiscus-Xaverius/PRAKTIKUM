@@ -1,0 +1,23 @@
+Menggunakan java.util.Collections
+Digunakan untuk mengimport built in function swap untuk mempermudah melakukan sorting.
+Cara kerja built in method ini sama dengan fungsi membuat variable penampung untuk melakukan perpindahan.
+perbedaannya adalah disini ketika kita melakukan call dari method tersebut, kita tidak perlu membuat variable tambahan
+sebagai sarana perpindahan/pertukaran antara variable (Swapping between variables).
+
+Penggunaannya adalah sebagai berikut:
+Contoh adalah pada ArrayList of Integer bernama ARL
+ArrayList<Integer> ARL = new ArrayList<Integer>();
+
+disini kita lakukan pertambahan 2 buah object Integer pada ArrayList ARL tersebut.
+ARL.add(1);
+ARL.add(2);
+
+maka index ke-0 akan memiliki nilai 1 dan index ke-1 akan memiliki nilai 2.
+Jika kita melakukan swap dengan cara seperti ini
+
+Collections.swap(<nama ArrayList atau Array dsb>, <Index dari item yang akan ditukar>, <Index dari item yang akan ditukar>)
+Contoh pada ArrayList ARL:
+Collections.swap(ARL, 0, 1);
+
+maka method ini akan melakukan pertukaran antara 2 posisi index tersebut.
+Sehingga pada index ke-0 akan memiliki nilai 2 dan index ke-1 akan memiliki nilai 1.
