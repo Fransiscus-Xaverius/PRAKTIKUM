@@ -1,0 +1,92 @@
+MariaDB [(none)]> prompt [\D] 221116955>>
+PROMPT set to '[\D] 221116955>>'
+[Mon Apr 25 17:57:12 2022] 221116955>>use db_ekspedisi;
+[Mon Apr 25 17:57:16 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:57:26 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    -> 
+    -> SELECT CONCAT((DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("| Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("| Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("| Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("| Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT("|",LPAD(K.NAMA,38),"|"),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.KODE=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    -> 
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+FROM KARYAWAN K,SUPIR S, ...' at line 20
+[Mon Apr 25 17:57:26 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:58:32 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:58:33 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    -> 
+    -> SELECT CONCAT(DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("| Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("| Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("| Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("| Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT("|",LPAD(K.NAMA,38),"|"),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.KODE=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    -> 
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+[Mon Apr 25 17:58:33 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:58:34 2022] 221116955>>CALL materi2('H0001');
+========================================
+12 May 2020
+|                SELESAI               |
+========================================
+| Asal      : WAREHOUSE 1              |
+| Tujuan    : WAREHOUSE 4              |
+| Kendaraan : L 1 WOW                  |
+| Supir     : Budi Hartono             |
+|--------------------------------------|
+|                        Amanda Rahimah|
+========================================
+[Mon Apr 25 17:58:38 2022] 221116955>>notee

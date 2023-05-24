@@ -1,0 +1,634 @@
+MariaDB [(none)]> prompt [\D] 221116955
+PROMPT set to '[\D] 221116955'
+[Mon Apr 11 16:27:36 2022] 221116955
+[Mon Apr 11 16:27:45 2022] 221116955use db_ekspedisi;
+Database changed
+[Mon Apr 11 16:27:56 2022] 221116955show tables;
++------------------------+
+| Tables_in_db_ekspedisi |
++------------------------+
+| barang                 |
+| d_pindah               |
+| d_supply               |
+| h_pindah               |
+| h_supply               |
+| karyawan               |
+| kategori               |
+| kendaraan              |
+| manager                |
+| merk                   |
+| supir                  |
+| supplier               |
+| warehouse              |
++------------------------+
+13 rows in set (0.023 sec)
+
+[Mon Apr 11 16:28:02 2022] 221116955desc barang;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int(10)      | NO   | PRI | NULL    |       |
+| kode        | varchar(6)   | NO   |     | NULL    |       |
+| nama        | varchar(100) | NO   |     | NULL    |       |
+| harga       | int(200)     | NO   |     | NULL    |       |
+| id_merk     | int(10)      | YES  | MUL | NULL    |       |
+| id_kategori | int(10)      | YES  | MUL | NULL    |       |
+| qty         | int(200)     | NO   |     | NULL    |       |
+| status      | int(1)       | NO   |     | NULL    |       |
+| keterangan  | varchar(200) | YES  |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+9 rows in set (0.008 sec)
+
+[Mon Apr 11 16:29:17 2022] 221116955select * from kategori;
++----+-----------+
+| id | nama      |
++----+-----------+
+|  1 | LAPTOP    |
+|  2 | HANDPHONE |
+|  3 | MOUSE     |
+|  4 | KEYBOARD  |
+|  5 | FLASHDISK |
+|  6 | VGA       |
++----+-----------+
+6 rows in set (0.001 sec)
+
+[Mon Apr 11 16:29:30 2022] 221116955select * from barang;
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+| id | kode   | nama                      | harga    | id_merk | id_kategori | qty | status | keterangan                                    |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+|  1 | BI1001 | IPHONE 13                 | 21000000 |       2 |           2 |  25 |      1 | RAM 6GB ROM 256GB                             |
+|  2 | BI1002 | IPHONE 13 PRO             | 25000000 |       2 |           2 |  30 |      1 | RAM 8GB ROM 512GB                             |
+|  3 | BI1003 | IPHONE 13 PRO MAX         | 27000000 |       2 |           2 |  30 |      1 | RAM 6GB ROM 1TB                               |
+|  4 | BSS001 | SAMSUNG S20               | 18500000 |       1 |           2 |  15 |      1 | NULL                                          |
+|  5 | BSS002 | SAMSUNG S21               | 21700000 |       1 |           2 |  20 |      1 | NULL                                          |
+|  6 | BAZ001 | ASUS ZEPHYRUS DUO PRO     | 35000000 |       6 |           1 |  15 |      1 | RAM 16GB ROM 1TB HYPER COOLING FREE MS OFFICE |
+|  7 | BAT001 | ASUS TUF FX 506 GT        | 16000000 |       6 |           1 |  17 |      1 | RAM 8GB ROM 512GB RBG BACKLIT KEYBOARD        |
+|  8 | BLG001 | LOGITECH G703             |  1550000 |       7 |           3 |  14 |      1 | 1000Hz Polling Rate 12.000 DPI WIRELESS       |
+|  9 | BLG002 | LOGITECH G102             |   250000 |       7 |           3 |  30 |      1 | 1000Hz Polling Rate 8.000 DPI                 |
+| 10 | BLG003 | LOGITECH G PRO X          |  2500000 |       7 |           4 |   0 |      0 | 1000Hz Polling Rate 25.600 DPI                |
+| 11 | BLM001 | LOGITECH MK 295           |   175000 |       7 |           4 |   5 |      1 | NULL                                          |
+| 12 | BSX003 | SONY XPERIA XZ1           |  2630000 |       5 |           2 |   7 |      1 | NULL                                          |
+| 13 | BSX004 | SONY XPERIA XZ2           |  3000000 |       5 |           2 |   9 |      1 | NULL                                          |
+| 14 | BVX001 | VIVO X70                  |  2550000 |       4 |           2 |  10 |      1 | NULL                                          |
+| 15 | BVV002 | VIVO V21 5G               |  3750000 |       4 |           2 |  15 |      1 | NULL                                          |
+| 16 | BOF001 | OPPO FIND X3 PRO          |  4700000 |       3 |           2 |  12 |      1 | NULL                                          |
+| 17 | BOR001 | OPPO RENO 5               |  4999000 |       3 |           2 |  15 |      1 | NULL                                          |
+| 18 | BOR002 | OPPO RENO 6               |  5799000 |       3 |           2 |   0 |      0 | NULL                                          |
+| 19 | BSF001 | SanDisk Flash Drive 16GB  |    59000 |       8 |           5 |  17 |      1 | MERAH, HITAM, PUTIH                           |
+| 20 | BSF002 | SanDisk Flash Drive 32GB  |    74000 |       8 |           5 |  39 |      1 | MERAH, HITAM                                  |
+| 21 | BSF003 | SanDisk Flash Drive 64GB  |    99900 |       8 |           5 |   4 |      1 | HITAM, PUTIH                                  |
+| 22 | BSF004 | SanDisk Flash Drive 128GB |   139000 |       8 |           5 |  10 |      1 | MERAH, HITAM, PUTIH, BIRU                     |
+| 23 | BGG001 | GeForce GTX 1650          |  5490000 |       9 |           6 |   5 |      1 | 4GB GDDR6                                     |
+| 24 | BGG002 | GeForce GTX 1650 Ti       |  5799000 |       9 |           6 |  14 |      1 | 5GB GDDR6                                     |
+| 25 | BGR001 | GeForce RTX 2080          | 14890000 |       9 |           6 |   8 |      1 | NULL                                          |
+| 26 | BGR002 | GeForce RTX 2080 Ti       | 17890000 |       9 |           6 |  21 |      1 | 8GB GDDR6                                     |
+| 27 | BGR003 | GeForce RTX 3060          | 12450000 |       9 |           6 |  10 |      1 | 8GB GDDR6                                     |
+| 28 | BGR004 | GeForce RTX 3060 Ti       | 14500000 |       9 |           6 |   0 |      0 | 12GB GDDR6                                    |
+| 29 | BGR005 | GeForce RTX 3080          | 22650000 |       9 |           6 |   5 |      1 | 12GB GDDR6                                    |
+| 30 | BGR006 | GeForce RTX 3090          | 42750000 |       9 |           6 |  13 |      1 | 24GB GDDR6                                    |
+| 31 | BEA001 | Earphone                  |    15999 |    NULL |        NULL |  20 |      1 | Warna Hitam                                   |
+| 32 | BHE001 | Headphone                 |    57750 |    NULL |        NULL |   4 |      1 | Warna Silver                                  |
+| 33 | BFL001 | Flashdisk                 |    32500 |    NULL |           5 |   8 |      1 | 4 GB Merah                                    |
+| 34 | BCH001 | Charger                   |    25000 |       1 |        NULL |  12 |      1 | Micro USB/Type B                              |
+| 35 | BKA001 | Kabel AUX                 |    17000 |    NULL |        NULL |  10 |      1 | NULL                                          |
+| 36 | BSP001 | Speaker                   |    25000 |    NULL |        NULL |   5 |      1 | NULL                                          |
+| 37 | BRT001 | Remote TV                 |    14500 |    NULL |        NULL |   7 |      1 | Universal                                     |
+| 38 | BRA001 | Remote AC                 |    15750 |    NULL |        NULL |  11 |      1 | Universal                                     |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+38 rows in set (0.001 sec)
+
+[Mon Apr 11 16:38:08 2022] 221116955SELECT k.nama
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id;
++-----------+
+| nama      |
++-----------+
+| LAPTOP    |
+| LAPTOP    |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| HANDPHONE |
+| MOUSE     |
+| MOUSE     |
+| KEYBOARD  |
+| KEYBOARD  |
+| FLASHDISK |
+| FLASHDISK |
+| FLASHDISK |
+| FLASHDISK |
+| FLASHDISK |
+| VGA       |
+| VGA       |
+| VGA       |
+| VGA       |
+| VGA       |
+| VGA       |
+| VGA       |
+| VGA       |
++-----------+
+31 rows in set (0.018 sec)
+
+[Mon Apr 11 16:47:07 2022] 221116955select * from barang;
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+| id | kode   | nama                      | harga    | id_merk | id_kategori | qty | status | keterangan                                    |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+|  1 | BI1001 | IPHONE 13                 | 21000000 |       2 |           2 |  25 |      1 | RAM 6GB ROM 256GB                             |
+|  2 | BI1002 | IPHONE 13 PRO             | 25000000 |       2 |           2 |  30 |      1 | RAM 8GB ROM 512GB                             |
+|  3 | BI1003 | IPHONE 13 PRO MAX         | 27000000 |       2 |           2 |  30 |      1 | RAM 6GB ROM 1TB                               |
+|  4 | BSS001 | SAMSUNG S20               | 18500000 |       1 |           2 |  15 |      1 | NULL                                          |
+|  5 | BSS002 | SAMSUNG S21               | 21700000 |       1 |           2 |  20 |      1 | NULL                                          |
+|  6 | BAZ001 | ASUS ZEPHYRUS DUO PRO     | 35000000 |       6 |           1 |  15 |      1 | RAM 16GB ROM 1TB HYPER COOLING FREE MS OFFICE |
+|  7 | BAT001 | ASUS TUF FX 506 GT        | 16000000 |       6 |           1 |  17 |      1 | RAM 8GB ROM 512GB RBG BACKLIT KEYBOARD        |
+|  8 | BLG001 | LOGITECH G703             |  1550000 |       7 |           3 |  14 |      1 | 1000Hz Polling Rate 12.000 DPI WIRELESS       |
+|  9 | BLG002 | LOGITECH G102             |   250000 |       7 |           3 |  30 |      1 | 1000Hz Polling Rate 8.000 DPI                 |
+| 10 | BLG003 | LOGITECH G PRO X          |  2500000 |       7 |           4 |   0 |      0 | 1000Hz Polling Rate 25.600 DPI                |
+| 11 | BLM001 | LOGITECH MK 295           |   175000 |       7 |           4 |   5 |      1 | NULL                                          |
+| 12 | BSX003 | SONY XPERIA XZ1           |  2630000 |       5 |           2 |   7 |      1 | NULL                                          |
+| 13 | BSX004 | SONY XPERIA XZ2           |  3000000 |       5 |           2 |   9 |      1 | NULL                                          |
+| 14 | BVX001 | VIVO X70                  |  2550000 |       4 |           2 |  10 |      1 | NULL                                          |
+| 15 | BVV002 | VIVO V21 5G               |  3750000 |       4 |           2 |  15 |      1 | NULL                                          |
+| 16 | BOF001 | OPPO FIND X3 PRO          |  4700000 |       3 |           2 |  12 |      1 | NULL                                          |
+| 17 | BOR001 | OPPO RENO 5               |  4999000 |       3 |           2 |  15 |      1 | NULL                                          |
+| 18 | BOR002 | OPPO RENO 6               |  5799000 |       3 |           2 |   0 |      0 | NULL                                          |
+| 19 | BSF001 | SanDisk Flash Drive 16GB  |    59000 |       8 |           5 |  17 |      1 | MERAH, HITAM, PUTIH                           |
+| 20 | BSF002 | SanDisk Flash Drive 32GB  |    74000 |       8 |           5 |  39 |      1 | MERAH, HITAM                                  |
+| 21 | BSF003 | SanDisk Flash Drive 64GB  |    99900 |       8 |           5 |   4 |      1 | HITAM, PUTIH                                  |
+| 22 | BSF004 | SanDisk Flash Drive 128GB |   139000 |       8 |           5 |  10 |      1 | MERAH, HITAM, PUTIH, BIRU                     |
+| 23 | BGG001 | GeForce GTX 1650          |  5490000 |       9 |           6 |   5 |      1 | 4GB GDDR6                                     |
+| 24 | BGG002 | GeForce GTX 1650 Ti       |  5799000 |       9 |           6 |  14 |      1 | 5GB GDDR6                                     |
+| 25 | BGR001 | GeForce RTX 2080          | 14890000 |       9 |           6 |   8 |      1 | NULL                                          |
+| 26 | BGR002 | GeForce RTX 2080 Ti       | 17890000 |       9 |           6 |  21 |      1 | 8GB GDDR6                                     |
+| 27 | BGR003 | GeForce RTX 3060          | 12450000 |       9 |           6 |  10 |      1 | 8GB GDDR6                                     |
+| 28 | BGR004 | GeForce RTX 3060 Ti       | 14500000 |       9 |           6 |   0 |      0 | 12GB GDDR6                                    |
+| 29 | BGR005 | GeForce RTX 3080          | 22650000 |       9 |           6 |   5 |      1 | 12GB GDDR6                                    |
+| 30 | BGR006 | GeForce RTX 3090          | 42750000 |       9 |           6 |  13 |      1 | 24GB GDDR6                                    |
+| 31 | BEA001 | Earphone                  |    15999 |    NULL |        NULL |  20 |      1 | Warna Hitam                                   |
+| 32 | BHE001 | Headphone                 |    57750 |    NULL |        NULL |   4 |      1 | Warna Silver                                  |
+| 33 | BFL001 | Flashdisk                 |    32500 |    NULL |           5 |   8 |      1 | 4 GB Merah                                    |
+| 34 | BCH001 | Charger                   |    25000 |       1 |        NULL |  12 |      1 | Micro USB/Type B                              |
+| 35 | BKA001 | Kabel AUX                 |    17000 |    NULL |        NULL |  10 |      1 | NULL                                          |
+| 36 | BSP001 | Speaker                   |    25000 |    NULL |        NULL |   5 |      1 | NULL                                          |
+| 37 | BRT001 | Remote TV                 |    14500 |    NULL |        NULL |   7 |      1 | Universal                                     |
+| 38 | BRA001 | Remote AC                 |    15750 |    NULL |        NULL |  11 |      1 | Universal                                     |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+38 rows in set (0.000 sec)
+
+[Mon Apr 11 16:48:43 2022] 221116955SELECT k.nama
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id and MIN(k.harga);
+ERROR 1111 (HY000): Invalid use of group function
+[Mon Apr 11 16:48:54 2022] 221116955SELECT k.nama
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id and MIN(k.harga)
+    -> group by k.nama;
+ERROR 1111 (HY000): Invalid use of group function
+[Mon Apr 11 16:50:07 2022] 221116955SELECT k.nama
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
++-----------+
+| nama      |
++-----------+
+| FLASHDISK |
+| HANDPHONE |
+| KEYBOARD  |
+| LAPTOP    |
+| MOUSE     |
+| VGA       |
++-----------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 11 16:50:12 2022] 221116955SELECT k.nama
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id as "Kategori Barang"
+    -> group by k.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as "Kategori Barang"
+group by k.nama' at line 4
+[Mon Apr 11 16:50:57 2022] 221116955SELECT k.nama as "Kategori Barang"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id 
+    -> group by k.nama;
++-----------------+
+| Kategori Barang |
++-----------------+
+| FLASHDISK       |
+| HANDPHONE       |
+| KEYBOARD        |
+| LAPTOP          |
+| MOUSE           |
+| VGA             |
++-----------------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 11 16:51:05 2022] 221116955SELECT k.nama as "Kategori Barang"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> INNER JOIN  barang b,
+    -> b.harga as "Harga Termurah"
+    -> where b.harga = (SELECT MIN(b.harga))
+    -> INNER JOIN k
+    -> on b.id_kategori=k.id
+    -> ;
+ERROR 1066 (42000): Not unique table/alias: 'b'
+[Mon Apr 11 16:55:55 2022] 221116955SELECT k.nama as "Kategori Barang", b.harga as "Harga Termurah"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id,
+    -> group by k.nama, MIN(b.harga);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group by k.nama, MIN(b.harga)' at line 5
+[Mon Apr 11 16:57:51 2022] 221116955SELECT k.nama as "Kategori Barang", b.harga as "Harga Termurah"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id,
+    -> group by k.nama, b.harga;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group by k.nama, b.harga' at line 5
+[Mon Apr 11 16:58:03 2022] 221116955SELECT b.nama as "Nama Barang", m.nama as "Merk Barang", k.nama as "Kategori Barang"
+    -> from barang b
+    -> left join merk m
+    -> on b.id_merk = m.id;
+ERROR 1054 (42S22): Unknown column 'k.nama' in 'field list'
+[Mon Apr 11 17:00:23 2022] 221116955SELECT b.nama as "Nama Barang", m.nama as "Merk Barang", k.nama as "Kategori Barang"
+    -> from barang b, merk m, kategori k
+    -> left join merk m
+    -> on b.id_merk = m.id;
+ERROR 1066 (42000): Not unique table/alias: 'm'
+[Mon Apr 11 17:00:57 2022] 221116955SELECT b.nama as "Nama Barang", m.nama as "Merk Barang", k.nama as "Kategori Barang"
+    -> from barang b, kategori k
+    -> left join merk m
+    -> on b.id_merk = m.id;
+ERROR 1054 (42S22): Unknown column 'b.id_merk' in 'on clause'
+[Mon Apr 11 17:01:09 2022] 221116955SELECT b.nama as "Nama Barang", m.nama as "Merk Barang", k.nama as "Kategori Barang"
+    -> from barang b, kategori k
+    -> left join merk m
+    -> on b.id_kategori = m.id;
+ERROR 1054 (42S22): Unknown column 'b.id_kategori' in 'on clause'
+[Mon Apr 11 17:01:28 2022] 221116955select * from barang;
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+| id | kode   | nama                      | harga    | id_merk | id_kategori | qty | status | keterangan                                    |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+|  1 | BI1001 | IPHONE 13                 | 21000000 |       2 |           2 |  25 |      1 | RAM 6GB ROM 256GB                             |
+|  2 | BI1002 | IPHONE 13 PRO             | 25000000 |       2 |           2 |  30 |      1 | RAM 8GB ROM 512GB                             |
+|  3 | BI1003 | IPHONE 13 PRO MAX         | 27000000 |       2 |           2 |  30 |      1 | RAM 6GB ROM 1TB                               |
+|  4 | BSS001 | SAMSUNG S20               | 18500000 |       1 |           2 |  15 |      1 | NULL                                          |
+|  5 | BSS002 | SAMSUNG S21               | 21700000 |       1 |           2 |  20 |      1 | NULL                                          |
+|  6 | BAZ001 | ASUS ZEPHYRUS DUO PRO     | 35000000 |       6 |           1 |  15 |      1 | RAM 16GB ROM 1TB HYPER COOLING FREE MS OFFICE |
+|  7 | BAT001 | ASUS TUF FX 506 GT        | 16000000 |       6 |           1 |  17 |      1 | RAM 8GB ROM 512GB RBG BACKLIT KEYBOARD        |
+|  8 | BLG001 | LOGITECH G703             |  1550000 |       7 |           3 |  14 |      1 | 1000Hz Polling Rate 12.000 DPI WIRELESS       |
+|  9 | BLG002 | LOGITECH G102             |   250000 |       7 |           3 |  30 |      1 | 1000Hz Polling Rate 8.000 DPI                 |
+| 10 | BLG003 | LOGITECH G PRO X          |  2500000 |       7 |           4 |   0 |      0 | 1000Hz Polling Rate 25.600 DPI                |
+| 11 | BLM001 | LOGITECH MK 295           |   175000 |       7 |           4 |   5 |      1 | NULL                                          |
+| 12 | BSX003 | SONY XPERIA XZ1           |  2630000 |       5 |           2 |   7 |      1 | NULL                                          |
+| 13 | BSX004 | SONY XPERIA XZ2           |  3000000 |       5 |           2 |   9 |      1 | NULL                                          |
+| 14 | BVX001 | VIVO X70                  |  2550000 |       4 |           2 |  10 |      1 | NULL                                          |
+| 15 | BVV002 | VIVO V21 5G               |  3750000 |       4 |           2 |  15 |      1 | NULL                                          |
+| 16 | BOF001 | OPPO FIND X3 PRO          |  4700000 |       3 |           2 |  12 |      1 | NULL                                          |
+| 17 | BOR001 | OPPO RENO 5               |  4999000 |       3 |           2 |  15 |      1 | NULL                                          |
+| 18 | BOR002 | OPPO RENO 6               |  5799000 |       3 |           2 |   0 |      0 | NULL                                          |
+| 19 | BSF001 | SanDisk Flash Drive 16GB  |    59000 |       8 |           5 |  17 |      1 | MERAH, HITAM, PUTIH                           |
+| 20 | BSF002 | SanDisk Flash Drive 32GB  |    74000 |       8 |           5 |  39 |      1 | MERAH, HITAM                                  |
+| 21 | BSF003 | SanDisk Flash Drive 64GB  |    99900 |       8 |           5 |   4 |      1 | HITAM, PUTIH                                  |
+| 22 | BSF004 | SanDisk Flash Drive 128GB |   139000 |       8 |           5 |  10 |      1 | MERAH, HITAM, PUTIH, BIRU                     |
+| 23 | BGG001 | GeForce GTX 1650          |  5490000 |       9 |           6 |   5 |      1 | 4GB GDDR6                                     |
+| 24 | BGG002 | GeForce GTX 1650 Ti       |  5799000 |       9 |           6 |  14 |      1 | 5GB GDDR6                                     |
+| 25 | BGR001 | GeForce RTX 2080          | 14890000 |       9 |           6 |   8 |      1 | NULL                                          |
+| 26 | BGR002 | GeForce RTX 2080 Ti       | 17890000 |       9 |           6 |  21 |      1 | 8GB GDDR6                                     |
+| 27 | BGR003 | GeForce RTX 3060          | 12450000 |       9 |           6 |  10 |      1 | 8GB GDDR6                                     |
+| 28 | BGR004 | GeForce RTX 3060 Ti       | 14500000 |       9 |           6 |   0 |      0 | 12GB GDDR6                                    |
+| 29 | BGR005 | GeForce RTX 3080          | 22650000 |       9 |           6 |   5 |      1 | 12GB GDDR6                                    |
+| 30 | BGR006 | GeForce RTX 3090          | 42750000 |       9 |           6 |  13 |      1 | 24GB GDDR6                                    |
+| 31 | BEA001 | Earphone                  |    15999 |    NULL |        NULL |  20 |      1 | Warna Hitam                                   |
+| 32 | BHE001 | Headphone                 |    57750 |    NULL |        NULL |   4 |      1 | Warna Silver                                  |
+| 33 | BFL001 | Flashdisk                 |    32500 |    NULL |           5 |   8 |      1 | 4 GB Merah                                    |
+| 34 | BCH001 | Charger                   |    25000 |       1 |        NULL |  12 |      1 | Micro USB/Type B                              |
+| 35 | BKA001 | Kabel AUX                 |    17000 |    NULL |        NULL |  10 |      1 | NULL                                          |
+| 36 | BSP001 | Speaker                   |    25000 |    NULL |        NULL |   5 |      1 | NULL                                          |
+| 37 | BRT001 | Remote TV                 |    14500 |    NULL |        NULL |   7 |      1 | Universal                                     |
+| 38 | BRA001 | Remote AC                 |    15750 |    NULL |        NULL |  11 |      1 | Universal                                     |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+38 rows in set (0.000 sec)
+
+[Mon Apr 11 17:01:42 2022] 221116955desc merk;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| id    | int(10)      | NO   | PRI | NULL    |       |
+| nama  | varchar(100) | NO   |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+2 rows in set (0.005 sec)
+
+[Mon Apr 11 17:01:56 2022] 221116955SELECT b.nama as "Nama Barang", m.nama as "Merk Barang", k.nama as "Kategori Barang"
+    -> from barang b, kategori k
+    -> left join merk m
+    -> on b.id_merk = m.id;
+ERROR 1054 (42S22): Unknown column 'b.id_merk' in 'on clause'
+[Mon Apr 11 17:02:04 2022] 221116955SELECT b.nama as "Nama Barang"
+    -> from barang b, merk m
+    -> on b.id_merk = m.id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'on b.id_merk = m.id' at line 3
+[Mon Apr 11 17:02:56 2022] 221116955SELECT b.nama as "Nama Barang", 
+    -> m.nama as "Merk Barang", 
+    -> k.nama as "Kategori Barang"
+    -> from barang b
+    -> left join merk m
+    -> on m.id=b.id_merk
+    -> left join kategori k
+    -> on k.id=b.id_kategori
+    -> order by b.nama desc;
++---------------------------+-------------+-----------------+
+| Nama Barang               | Merk Barang | Kategori Barang |
++---------------------------+-------------+-----------------+
+| VIVO X70                  | VIVO        | HANDPHONE       |
+| VIVO V21 5G               | VIVO        | HANDPHONE       |
+| Speaker                   | NULL        | NULL            |
+| SONY XPERIA XZ2           | SONY        | HANDPHONE       |
+| SONY XPERIA XZ1           | SONY        | HANDPHONE       |
+| SanDisk Flash Drive 64GB  | SANDDISK    | FLASHDISK       |
+| SanDisk Flash Drive 32GB  | SANDDISK    | FLASHDISK       |
+| SanDisk Flash Drive 16GB  | SANDDISK    | FLASHDISK       |
+| SanDisk Flash Drive 128GB | SANDDISK    | FLASHDISK       |
+| SAMSUNG S21               | SAMSUNG     | HANDPHONE       |
+| SAMSUNG S20               | SAMSUNG     | HANDPHONE       |
+| Remote TV                 | NULL        | NULL            |
+| Remote AC                 | NULL        | NULL            |
+| OPPO RENO 6               | OPPO        | HANDPHONE       |
+| OPPO RENO 5               | OPPO        | HANDPHONE       |
+| OPPO FIND X3 PRO          | OPPO        | HANDPHONE       |
+| LOGITECH MK 295           | LOGITECH    | KEYBOARD        |
+| LOGITECH G703             | LOGITECH    | MOUSE           |
+| LOGITECH G102             | LOGITECH    | MOUSE           |
+| LOGITECH G PRO X          | LOGITECH    | KEYBOARD        |
+| Kabel AUX                 | NULL        | NULL            |
+| IPHONE 13 PRO MAX         | APPLE       | HANDPHONE       |
+| IPHONE 13 PRO             | APPLE       | HANDPHONE       |
+| IPHONE 13                 | APPLE       | HANDPHONE       |
+| Headphone                 | NULL        | NULL            |
+| GeForce RTX 3090          | NVIDIA      | VGA             |
+| GeForce RTX 3080          | NVIDIA      | VGA             |
+| GeForce RTX 3060 Ti       | NVIDIA      | VGA             |
+| GeForce RTX 3060          | NVIDIA      | VGA             |
+| GeForce RTX 2080 Ti       | NVIDIA      | VGA             |
+| GeForce RTX 2080          | NVIDIA      | VGA             |
+| GeForce GTX 1650 Ti       | NVIDIA      | VGA             |
+| GeForce GTX 1650          | NVIDIA      | VGA             |
+| Flashdisk                 | NULL        | FLASHDISK       |
+| Earphone                  | NULL        | NULL            |
+| Charger                   | SAMSUNG     | NULL            |
+| ASUS ZEPHYRUS DUO PRO     | ASUS        | LAPTOP          |
+| ASUS TUF FX 506 GT        | ASUS        | LAPTOP          |
++---------------------------+-------------+-----------------+
+38 rows in set (0.000 sec)
+
+[Mon Apr 11 17:07:04 2022] 221116955SELECT b.nama as "Nama Barang", 
+    -> ifnull(m.nama,"Tidak memiliki Merk") as "Merk Barang", 
+    -> k.nama as "Kategori Barang"
+    -> from barang b
+    -> left join merk m
+    -> on m.id=b.id_merk
+    -> left join kategori k
+    -> on k.id=b.id_kategori
+    -> order by length (b.nama);
++---------------------------+---------------------+-----------------+
+| Nama Barang               | Merk Barang         | Kategori Barang |
++---------------------------+---------------------+-----------------+
+| Speaker                   | Tidak memiliki Merk | NULL            |
+| Charger                   | SAMSUNG             | NULL            |
+| VIVO X70                  | VIVO                | HANDPHONE       |
+| Earphone                  | Tidak memiliki Merk | NULL            |
+| Remote AC                 | Tidak memiliki Merk | NULL            |
+| Headphone                 | Tidak memiliki Merk | NULL            |
+| Flashdisk                 | Tidak memiliki Merk | FLASHDISK       |
+| Kabel AUX                 | Tidak memiliki Merk | NULL            |
+| Remote TV                 | Tidak memiliki Merk | NULL            |
+| IPHONE 13                 | APPLE               | HANDPHONE       |
+| OPPO RENO 6               | OPPO                | HANDPHONE       |
+| VIVO V21 5G               | VIVO                | HANDPHONE       |
+| SAMSUNG S20               | SAMSUNG             | HANDPHONE       |
+| OPPO RENO 5               | OPPO                | HANDPHONE       |
+| SAMSUNG S21               | SAMSUNG             | HANDPHONE       |
+| LOGITECH G703             | LOGITECH            | MOUSE           |
+| LOGITECH G102             | LOGITECH            | MOUSE           |
+| IPHONE 13 PRO             | APPLE               | HANDPHONE       |
+| LOGITECH MK 295           | LOGITECH            | KEYBOARD        |
+| SONY XPERIA XZ2           | SONY                | HANDPHONE       |
+| SONY XPERIA XZ1           | SONY                | HANDPHONE       |
+| GeForce RTX 3090          | NVIDIA              | VGA             |
+| GeForce RTX 3080          | NVIDIA              | VGA             |
+| GeForce RTX 3060          | NVIDIA              | VGA             |
+| GeForce RTX 2080          | NVIDIA              | VGA             |
+| LOGITECH G PRO X          | LOGITECH            | KEYBOARD        |
+| GeForce GTX 1650          | NVIDIA              | VGA             |
+| OPPO FIND X3 PRO          | OPPO                | HANDPHONE       |
+| IPHONE 13 PRO MAX         | APPLE               | HANDPHONE       |
+| ASUS TUF FX 506 GT        | ASUS                | LAPTOP          |
+| GeForce RTX 2080 Ti       | NVIDIA              | VGA             |
+| GeForce RTX 3060 Ti       | NVIDIA              | VGA             |
+| GeForce GTX 1650 Ti       | NVIDIA              | VGA             |
+| ASUS ZEPHYRUS DUO PRO     | ASUS                | LAPTOP          |
+| SanDisk Flash Drive 64GB  | SANDDISK            | FLASHDISK       |
+| SanDisk Flash Drive 16GB  | SANDDISK            | FLASHDISK       |
+| SanDisk Flash Drive 32GB  | SANDDISK            | FLASHDISK       |
+| SanDisk Flash Drive 128GB | SANDDISK            | FLASHDISK       |
++---------------------------+---------------------+-----------------+
+38 rows in set (0.000 sec)
+
+[Mon Apr 11 17:11:40 2022] 221116955SELECT b.nama as "Nama Barang", 
+    -> ifnull(m.nama,"Tidak memiliki Merk") as "Merk Barang", 
+    -> ifnull(k.nama,"Tidak memiliki kategori") as "Kategori Barang"
+    -> from barang b
+    -> left join merk m
+    -> on m.id=b.id_merk
+    -> left join kategori k
+    -> on k.id=b.id_kategori
+    -> where b.harga<1000000
+    -> order by length (b.nama), b.nama desc, b.harga asc;
++---------------------------+---------------------+-------------------------+
+| Nama Barang               | Merk Barang         | Kategori Barang         |
++---------------------------+---------------------+-------------------------+
+| Speaker                   | Tidak memiliki Merk | Tidak memiliki kategori |
+| Charger                   | SAMSUNG             | Tidak memiliki kategori |
+| Earphone                  | Tidak memiliki Merk | Tidak memiliki kategori |
+| Remote TV                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Remote AC                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Kabel AUX                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Headphone                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Flashdisk                 | Tidak memiliki Merk | FLASHDISK               |
+| LOGITECH G102             | LOGITECH            | MOUSE                   |
+| LOGITECH MK 295           | LOGITECH            | KEYBOARD                |
+| SanDisk Flash Drive 64GB  | SANDDISK            | FLASHDISK               |
+| SanDisk Flash Drive 32GB  | SANDDISK            | FLASHDISK               |
+| SanDisk Flash Drive 16GB  | SANDDISK            | FLASHDISK               |
+| SanDisk Flash Drive 128GB | SANDDISK            | FLASHDISK               |
++---------------------------+---------------------+-------------------------+
+14 rows in set (0.000 sec)
+
+[Mon Apr 11 17:14:22 2022] 221116955SELECT b.nama as "Nama Barang", 
+    -> ifnull(m.nama,"Tidak memiliki Merk") as "Merk Barang", 
+    -> ifnull(k.nama,"Tidak memiliki kategori") as "Kategori Barang"
+    -> from barang b
+    -> left join merk m
+    -> on m.id=b.id_merk
+    -> left join kategori k
+    -> on k.id=b.id_kategori
+    -> where b.harga<1000000
+    -> order by length (b.nama), b.harga asc;
++---------------------------+---------------------+-------------------------+
+| Nama Barang               | Merk Barang         | Kategori Barang         |
++---------------------------+---------------------+-------------------------+
+| Speaker                   | Tidak memiliki Merk | Tidak memiliki kategori |
+| Charger                   | SAMSUNG             | Tidak memiliki kategori |
+| Earphone                  | Tidak memiliki Merk | Tidak memiliki kategori |
+| Remote TV                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Remote AC                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Kabel AUX                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| Flashdisk                 | Tidak memiliki Merk | FLASHDISK               |
+| Headphone                 | Tidak memiliki Merk | Tidak memiliki kategori |
+| LOGITECH G102             | LOGITECH            | MOUSE                   |
+| LOGITECH MK 295           | LOGITECH            | KEYBOARD                |
+| SanDisk Flash Drive 16GB  | SANDDISK            | FLASHDISK               |
+| SanDisk Flash Drive 32GB  | SANDDISK            | FLASHDISK               |
+| SanDisk Flash Drive 64GB  | SANDDISK            | FLASHDISK               |
+| SanDisk Flash Drive 128GB | SANDDISK            | FLASHDISK               |
++---------------------------+---------------------+-------------------------+
+14 rows in set (0.000 sec)
+
+[Mon Apr 11 17:16:11 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> b.harga as "Harga Termurah"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
++-----------------+----------------+
+| Kategori Barang | Harga Termurah |
++-----------------+----------------+
+| FLASHDISK       |          59000 |
+| HANDPHONE       |       21000000 |
+| KEYBOARD        |        2500000 |
+| LAPTOP          |       35000000 |
+| MOUSE           |        1550000 |
+| VGA             |        5490000 |
++-----------------+----------------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 11 17:19:15 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> MIN(b.harga) as "Harga Termurah"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
++-----------------+----------------+
+| Kategori Barang | Harga Termurah |
++-----------------+----------------+
+| FLASHDISK       |          32500 |
+| HANDPHONE       |        2550000 |
+| KEYBOARD        |         175000 |
+| LAPTOP          |       16000000 |
+| MOUSE           |         250000 |
+| VGA             |        5490000 |
++-----------------+----------------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 11 17:19:41 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> CONCAT(MIN("Rp.",b.harga)) as "Harga Termurah"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'b.harga)) as "Harga Termurah"
+from kategori k
+INNER JOIN barang b
+on b.id_kat...' at line 2
+[Mon Apr 11 17:20:17 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> CONCAT("Rp.",MIN(b.harga)) as "Harga Termurah"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
++-----------------+----------------+
+| Kategori Barang | Harga Termurah |
++-----------------+----------------+
+| FLASHDISK       | Rp.32500       |
+| HANDPHONE       | Rp.2550000     |
+| KEYBOARD        | Rp.175000      |
+| LAPTOP          | Rp.16000000    |
+| MOUSE           | Rp.250000      |
+| VGA             | Rp.5490000     |
++-----------------+----------------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 11 17:21:00 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> CONCAT("Rp.",MIN(b.harga)) as "Harga Termurah",
+    -> CONCAT("Rp."(AVG(b.harga))) as "Rata-rata Harga"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(AVG(b.harga))) as "Rata-rata Harga"
+from kategori k
+INNER JOIN barang b
+on b...' at line 3
+[Mon Apr 11 17:27:28 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> CONCAT("Rp.",MIN(b.harga)) as "Harga Termurah",
+    -> CONCAT("Rp."(AVG(b.harga)) as "Rata-rata Harga"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(AVG(b.harga)) as "Rata-rata Harga"
+from kategori k
+INNER JOIN barang b
+on b....' at line 3
+[Mon Apr 11 17:27:43 2022] 221116955SELECT k.nama as "Kategori Barang",
+    -> CONCAT("Rp.",MIN(b.harga)) as "Harga Termurah",
+    -> CONCAT("Rp.",AVG(b.harga)) as "Rata-rata Harga"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
++-----------------+----------------+------------------+
+| Kategori Barang | Harga Termurah | Rata-rata Harga  |
++-----------------+----------------+------------------+
+| FLASHDISK       | Rp.32500       | Rp.80880.0000    |
+| HANDPHONE       | Rp.2550000     | Rp.11719000.0000 |
+| KEYBOARD        | Rp.175000      | Rp.1337500.0000  |
+| LAPTOP          | Rp.16000000    | Rp.25500000.0000 |
+| MOUSE           | Rp.250000      | Rp.900000.0000   |
+| VGA             | Rp.5490000     | Rp.17052375.0000 |
++-----------------+----------------+------------------+
+6 rows in set (0.001 sec)
+
+[Mon Apr 11 17:29:04 2022] 221116955SELECT k.nama as "Kategori Barang", 
+    -> CONCAT("Rp.",MIN(b.harga)) as "Harga Termurah",
+    -> CONCAT("Rp.",CEIL(AVG(b.harga))) as "Rata-rata Harga"
+    -> from kategori k
+    -> INNER JOIN barang b
+    -> on b.id_kategori=k.id
+    -> group by k.nama;
++-----------------+----------------+-----------------+
+| Kategori Barang | Harga Termurah | Rata-rata Harga |
++-----------------+----------------+-----------------+
+| FLASHDISK       | Rp.32500       | Rp.80880        |
+| HANDPHONE       | Rp.2550000     | Rp.11719000     |
+| KEYBOARD        | Rp.175000      | Rp.1337500      |
+| LAPTOP          | Rp.16000000    | Rp.25500000     |
+| MOUSE           | Rp.250000      | Rp.900000       |
+| VGA             | Rp.5490000     | Rp.17052375     |
++-----------------+----------------+-----------------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 11 17:29:43 2022] 221116955notee

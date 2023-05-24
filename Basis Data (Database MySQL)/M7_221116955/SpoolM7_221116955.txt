@@ -1,0 +1,686 @@
+Microsoft Windows [Version 10.0.22000.613]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Frans>D:
+
+D:\>cd xampp\mysql\bin
+
+D:\xampp\mysql\bin>mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 22
+Server version: 10.4.22-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> tee tee D://Spool_File/SpoolM6_221116955.txt;
+mysql: Can't create/write to file 'tee D://Spool_File/SpoolM6_221116955.txt' (Errcode: 22 "Invalid argument")
+Error logging to file 'tee D://Spool_File/SpoolM6_221116955.txt'
+MariaDB [(none)]> tee D://Spool_File/SpoolM6_221116955.txt;
+Logging to file 'D://Spool_File/SpoolM6_221116955.txt'
+MariaDB [(none)]> prompt [\D] 221116955>>
+PROMPT set to '[\D] 221116955>>'
+[Mon Apr 25 15:58:03 2022] 221116955>>If you're reading this. Saya capek dengan praktikum ko, saya bobrok basdat sekian terima kasih
+    '> ;
+    '> "
+    '> '
+    -> ;
+ERROR 1327 (42000): Undeclared variable: you
+[Mon Apr 25 15:58:35 2022] 221116955>>Ctrl-C -- exit!
+Bye
+
+D:\xampp\mysql\bin>mysql -u root -p -h 127.0.0.1 -s -N
+Enter password:
+MariaDB [(none)]> tee D://Spool_File/SpoolM6_221116955.txt;
+Logging to file 'D://Spool_File/SpoolM6_221116955.txt'
+MariaDB [(none)]> prompt [\D] 221116955>>
+PROMPT set to '[\D] 221116955>>'
+[Mon Apr 25 16:07:08 2022] 221116955>>use db_ekspedisi;
+[Mon Apr 25 16:07:19 2022] 221116955>>show tables;
+barang
+d_pindah
+d_supply
+h_pindah
+h_supply
+karyawan
+kategori
+kendaraan
+manager
+merk
+supir
+supplier
+warehouse
+[Mon Apr 25 16:07:24 2022] 221116955>>select * from h_supply;
+HS0001  3       2020-12-01      1       10      7
+HS0002  4       2020-12-17      5       15      10
+HS0003  2       2021-02-05      4       12      5
+HS0004  5       2021-04-09      2       5       9
+HS0005  1       2021-07-21      3       13      20
+HS0006  3       2021-09-11      4       9       7
+HS0007  2       2021-09-29      2       20      11
+HS0008  4       2021-10-01      5       24      7
+[Mon Apr 25 16:08:04 2022] 221116955>>desc karyawan;
+id      int(10) NO      PRI     NULL
+nama    varchar(100)    NO              NULL
+telp    varchar(12)     NO              NULL
+tanggal_lahir   date    NO              NULL
+gender  varchar(1)      NO              NULL
+email   varchar(100)    NO              NULL
+tempat_kerja    int(10) NO      MUL     NULL
+id_manager      int(10) NO      MUL     NULL
+status  int(1)  NO              NULL
+[Mon Apr 25 16:59:59 2022] 221116955>>delimiter $
+[Mon Apr 25 17:13:36 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi1(UMUR INT)
+    -> BEGIN
+    -> DECLARE NAMA VARCHAR(50);
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOTELP VARCHAR(12);
+    -> DECLARE EMAIL VARCHAR (100);
+    -> DECLARE UMUR_K INT;
+    ->
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT K.ID
+    -> FROM KARYAWAN K
+    -> WHERE TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE())<UMUR;
+    ->
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    ->
+    -> SELECT "#============================================#";
+    -> SELECT "|                DATA KARYAWAN               |";
+    -> SELECT "#============================================#";
+    ->
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    ->
+    -> IF CEK_KOSONG = 1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT K.NAMA, K.TELP,K.EMAIL, TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE()) INTO NAMA, NOTELP, EMAIL, UMUR_K
+    -> FROM KARYAWAN K
+    -> WHERE K.ID = ID;
+    -> SELECT "#--------------------------------------------#";
+    -> SELECT CONCAT("| Nama  : ",RPAD(NAMA,35),"#");
+    -> SELECT CONCAT("| Telp  : ",RPAD(NOTELP,35),"#");
+    -> SELECT CONCAT("| Email  : ",RPAD(EMAIL,34),"#");
+    -> SELECT CONCAT("| Usia  : ",RPAD(CONCAT(UMUR_K," tahun"),35),"#");
+    -> SELECT "#--------------------------------------------#";
+    -> END IF;
+    ->
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    ->
+    -> END$
+ERROR 1327 (42000): Undeclared variable: ID
+[Mon Apr 25 17:13:36 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:14:03 2022] 221116955>>delimiter $
+[Mon Apr 25 17:14:05 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi1(UMUR INT)
+    -> BEGIN
+    -> DECLARE ID VARCHAR(50);
+    -> DECLARE NAMA VARCHAR(50);
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOTELP VARCHAR(12);
+    -> DECLARE EMAIL VARCHAR (100);
+    -> DECLARE UMUR_K INT;
+    ->
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT K.ID
+    -> FROM KARYAWAN K
+    -> WHERE TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE())<UMUR;
+    ->
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    ->
+    -> SELECT "#============================================#";
+    -> SELECT "|                DATA KARYAWAN               |";
+    -> SELECT "#============================================#";
+    ->
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    ->
+    -> IF CEK_KOSONG = 1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT K.NAMA, K.TELP,K.EMAIL, TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE()) INTO NAMA, NOTELP, EMAIL, UMUR_K
+    -> FROM KARYAWAN K
+    -> WHERE K.ID = ID;
+    -> SELECT "#--------------------------------------------#";
+    -> SELECT CONCAT("| Nama  : ",RPAD(NAMA,35),"#");
+    -> SELECT CONCAT("| Telp  : ",RPAD(NOTELP,35),"#");
+    -> SELECT CONCAT("| Email  : ",RPAD(EMAIL,34),"#");
+    -> SELECT CONCAT("| Usia  : ",RPAD(CONCAT(UMUR_K," tahun"),35),"#");
+    -> SELECT "#--------------------------------------------#";
+    -> END IF;
+    ->
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    ->
+    -> END$
+[Mon Apr 25 17:14:05 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:14:10 2022] 221116955>>CALL materi1(45);
+#============================================#
+|                DATA KARYAWAN               |
+#============================================#
+ERROR 1326 (24000): Cursor is not open
+[Mon Apr 25 17:14:17 2022] 221116955>>delimiter $
+[Mon Apr 25 17:14:52 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi1(UMUR INT)
+    -> BEGIN
+    -> DECLARE ID VARCHAR(50);
+    -> DECLARE NAMA VARCHAR(50);
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOTELP VARCHAR(12);
+    -> DECLARE EMAIL VARCHAR (100);
+    -> DECLARE UMUR_K INT;
+    ->
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT K.ID
+    -> FROM KARYAWAN K
+    -> WHERE TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE())<UMUR;
+    ->
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    ->
+    -> SELECT "#============================================#";
+    -> SELECT "|                DATA KARYAWAN               |";
+    -> SELECT "#============================================#";
+    ->
+    -> OPEN LIST;
+    ->
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    ->
+    -> IF CEK_KOSONG = 1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT K.NAMA, K.TELP,K.EMAIL, TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE()) INTO NAMA, NOTELP, EMAIL, UMUR_K
+    -> FROM KARYAWAN K
+    -> WHERE K.ID = ID;
+    -> SELECT "#--------------------------------------------#";
+    -> SELECT CONCAT("| Nama  : ",RPAD(NAMA,35),"#");
+    -> SELECT CONCAT("| Telp  : ",RPAD(NOTELP,35),"#");
+    -> SELECT CONCAT("| Email  : ",RPAD(EMAIL,34),"#");
+    -> SELECT CONCAT("| Usia  : ",RPAD(CONCAT(UMUR_K," tahun"),35),"#");
+    -> SELECT "#--------------------------------------------#";
+    -> END IF;
+    ->
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    ->
+    -> END$
+[Mon Apr 25 17:14:52 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:14:53 2022] 221116955>>CALL materi1(45);
+#============================================#
+|                DATA KARYAWAN               |
+#============================================#
+#--------------------------------------------#
+| Nama  : Amanda Rahimah                     #
+| Telp  : 081957603756                       #
+| Email  : Amanda_Rahimah472@hotmail.com     #
+| Usia  : 41 tahun                           #
+#--------------------------------------------#
+#--------------------------------------------#
+| Nama  : Fred Siregar                       #
+| Telp  : 081850788261                       #
+| Email  : Fred_Siregar344@gmail.com         #
+| Usia  : 37 tahun                           #
+#--------------------------------------------#
+#--------------------------------------------#
+| Nama  : Elvina Permata                     #
+| Telp  : 081876504943                       #
+| Email  : Elvina_Permata36@gmail.com        #
+| Usia  : 24 tahun                           #
+#--------------------------------------------#
+#--------------------------------------------#
+| Nama  : Joshua Sihotang                    #
+| Telp  : 081088965483                       #
+| Email  : Joshua_Sihotang564@yahoo.com      #
+| Usia  : 41 tahun                           #
+#--------------------------------------------#
+[Mon Apr 25 17:15:01 2022] 221116955>>delimiter $
+[Mon Apr 25 17:16:45 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi1(UMUR INT)
+    -> BEGIN
+    -> DECLARE ID VARCHAR(50);
+    -> DECLARE NAMA VARCHAR(50);
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOTELP VARCHAR(12);
+    -> DECLARE EMAIL VARCHAR (100);
+    -> DECLARE UMUR_K INT;
+    ->
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT K.ID
+    -> FROM KARYAWAN K
+    -> WHERE TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE())<UMUR
+    -> ORDER BY K.NAMA;
+    ->
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    ->
+    -> SELECT "#============================================#";
+    -> SELECT "|                DATA KARYAWAN               |";
+    -> SELECT "#============================================#";
+    ->
+    -> OPEN LIST;
+    ->
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    ->
+    -> IF CEK_KOSONG = 1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT K.NAMA, K.TELP,K.EMAIL, TIMESTAMPDIFF(YEAR,K.TANGGAL_LAHIR,CURDATE()) INTO NAMA, NOTELP, EMAIL, UMUR_K
+    -> FROM KARYAWAN K
+    -> WHERE K.ID = ID;
+    -> SELECT "#--------------------------------------------#";
+    -> SELECT CONCAT("| Nama  : ",RPAD(NAMA,35),"#");
+    -> SELECT CONCAT("| Telp  : ",RPAD(NOTELP,35),"#");
+    -> SELECT CONCAT("| Email  : ",RPAD(EMAIL,34),"#");
+    -> SELECT CONCAT("| Usia  : ",RPAD(CONCAT(UMUR_K," tahun"),35),"#");
+    -> SELECT "#--------------------------------------------#";
+    -> END IF;
+    ->
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    ->
+    -> END$
+[Mon Apr 25 17:16:45 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:16:46 2022] 221116955>>CALL materi1(45);
+#============================================#
+|                DATA KARYAWAN               |
+#============================================#
+#--------------------------------------------#
+| Nama  : Amanda Rahimah                     #
+| Telp  : 081957603756                       #
+| Email  : Amanda_Rahimah472@hotmail.com     #
+| Usia  : 41 tahun                           #
+#--------------------------------------------#
+#--------------------------------------------#
+| Nama  : Elvina Permata                     #
+| Telp  : 081876504943                       #
+| Email  : Elvina_Permata36@gmail.com        #
+| Usia  : 24 tahun                           #
+#--------------------------------------------#
+#--------------------------------------------#
+| Nama  : Fred Siregar                       #
+| Telp  : 081850788261                       #
+| Email  : Fred_Siregar344@gmail.com         #
+| Usia  : 37 tahun                           #
+#--------------------------------------------#
+#--------------------------------------------#
+| Nama  : Joshua Sihotang                    #
+| Telp  : 081088965483                       #
+| Email  : Joshua_Sihotang564@yahoo.com      #
+| Usia  : 41 tahun                           #
+#--------------------------------------------#
+[Mon Apr 25 17:16:53 2022] 221116955>>DESC H_PINDAH;
+kode    varchar(5)      NO      PRI     NULL
+asal    int(10) NO      MUL     NULL
+tujuan  int(10) NO      MUL     NULL
+tanggal date    NO              NULL
+id_kendaraan    int(10) NO      MUL     NULL
+id_supir        int(5)  NO              NULL
+id_karyawan     int(10) YES     MUL     NULL
+total_qty       int(200)        NO              NULL
+status  int(1)  NO              NULL
+[Mon Apr 25 17:18:25 2022] 221116955>>DESC KENDARAAN;
+id      int(10) NO      PRI     NULL
+nopol   varchar(12)     NO              NULL
+merk    varchar(50)     NO              NULL
+tipe    int(1)  NO              NULL
+status  int(1)  NO              NULL
+[Mon Apr 25 17:21:49 2022] 221116955>>SELECT * FROM H_PINDAH
+    -> ;
+H0001   1       4       2020-05-12      2       1       3       5       1
+H0002   3       2       2020-11-30      3       2       2       7       1
+H0003   2       5       2020-08-01      3       6       4       10      1
+H0004   5       3       2021-02-18      4       7       10      12      1
+H0005   4       2       2021-03-25      1       9       9       9       1
+H0006   2       4       2021-04-21      2       5       12      4       1
+H0007   1       4       2021-04-30      5       3       6       15      1
+H0008   2       5       2021-05-01      6       4       10      10      1
+H0009   5       2       2021-05-21      7       10      11      30      1
+H0010   2       3       2021-06-02      2       9       NULL    15      0
+H0011   5       2       2021-07-17      5       1       NULL    15      0
+H0012   2       5       2021-08-21      7       5       NULL    7       0
+H0013   5       3       2021-08-22      6       8       NULL    13      0
+H0014   2       3       2021-09-22      1       10      NULL    20      0
+H0015   4       3       2021-10-10      2       2       NULL    27      0
+[Mon Apr 25 17:23:02 2022] 221116955>>SELECT * FROM WAREHOUSEL
+    -> ;
+ERROR 1146 (42S02): Table 'db_ekspedisi.warehousel' doesn't exist
+[Mon Apr 25 17:23:27 2022] 221116955>>SELECT * FROM WAREHOUSE;
+1       WAREHOUSE 1     Jalan Monyet Nomor 1    0313875624      5       0
+2       WAREHOUSE 2     Jalan Serigala Malam Nomor 41   0317593756      1       1
+3       WAREHOUSE 3     Jalan Macan Nomor 45    0317596832      2       1
+4       WAREHOUSE 4     Jalan Badak Putih Nomor 73      0319673527      3       1
+5       WAREHOUSE 5     Jalan Raja Nomor 52     0317683018      4       1
+[Mon Apr 25 17:23:29 2022] 221116955>>desc kendaraan;
+id      int(10) NO      PRI     NULL
+nopol   varchar(12)     NO              NULL
+merk    varchar(50)     NO              NULL
+tipe    int(1)  NO              NULL
+status  int(1)  NO              NULL
+[Mon Apr 25 17:28:11 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:42:56 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    -> DECLARE LIST CURSOR FOR
+    ->
+    -> SELECT CONCAT(DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("Tujuan    : WAREHOUSE ",H.TUJUAN,"              |"), CONCAT("Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT(LPAD(K.NAMA,38)),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.ID=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+ERROR 1323 (42000): Cursor SELECT must not have INTO
+[Mon Apr 25 17:42:56 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:43:05 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:43:22 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    ->
+    -> SELECT CONCAT(DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("Tujuan    : WAREHOUSE ",H.TUJUAN,"              |"), CONCAT("Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT(LPAD(K.NAMA,38)),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.ID=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+[Mon Apr 25 17:43:22 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:43:23 2022] 221116955>>CALL materi2('H0001');
+ERROR 1054 (42S22): Unknown column 'H.TUJUAN' in 'field list'
+[Mon Apr 25 17:43:28 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:43:43 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    ->
+    -> SELECT CONCAT(DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT(LPAD(K.NAMA,38)),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.ID=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+[Mon Apr 25 17:43:44 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:43:44 2022] 221116955>>CALL materi2('H0001');
+ERROR 1054 (42S22): Unknown column 'HP.ID' in 'where clause'
+[Mon Apr 25 17:43:48 2022] 221116955>>SELECT * FROM H_PINDAH;
+H0001   1       4       2020-05-12      2       1       3       5       1
+H0002   3       2       2020-11-30      3       2       2       7       1
+H0003   2       5       2020-08-01      3       6       4       10      1
+H0004   5       3       2021-02-18      4       7       10      12      1
+H0005   4       2       2021-03-25      1       9       9       9       1
+H0006   2       4       2021-04-21      2       5       12      4       1
+H0007   1       4       2021-04-30      5       3       6       15      1
+H0008   2       5       2021-05-01      6       4       10      10      1
+H0009   5       2       2021-05-21      7       10      11      30      1
+H0010   2       3       2021-06-02      2       9       NULL    15      0
+H0011   5       2       2021-07-17      5       1       NULL    15      0
+H0012   2       5       2021-08-21      7       5       NULL    7       0
+H0013   5       3       2021-08-22      6       8       NULL    13      0
+H0014   2       3       2021-09-22      1       10      NULL    20      0
+H0015   4       3       2021-10-10      2       2       NULL    27      0
+[Mon Apr 25 17:43:55 2022] 221116955>>DESC H_PINDAH;
+kode    varchar(5)      NO      PRI     NULL
+asal    int(10) NO      MUL     NULL
+tujuan  int(10) NO      MUL     NULL
+tanggal date    NO              NULL
+id_kendaraan    int(10) NO      MUL     NULL
+id_supir        int(5)  NO              NULL
+id_karyawan     int(10) YES     MUL     NULL
+total_qty       int(200)        NO              NULL
+status  int(1)  NO              NULL
+[Mon Apr 25 17:44:00 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:44:18 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    ->
+    -> SELECT CONCAT(DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT(LPAD(K.NAMA,38)),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.KODE=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+[Mon Apr 25 17:44:18 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:44:18 2022] 221116955>>CALL materi2('H0001');
+========================================
+12 May 2020
+|                SELESAI               |
+========================================
+Asal      : WAREHOUSE 1              |
+Tujuan    : WAREHOUSE 4              |
+Kendaraan : L 1 WOW                  |
+Supir     : Budi Hartono             |
+|--------------------------------------|
+                        Amanda Rahimah
+========================================
+[Mon Apr 25 17:44:27 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:46:01 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    ->
+    -> SELECT CONCAT(DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("| Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("| Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("| Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("| Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT("|",LPAD(K.NAMA,38),"|"),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.KODE=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+[Mon Apr 25 17:46:01 2022] 221116955>>DELIMITER ;
+[Mon Apr 25 17:46:02 2022] 221116955>>CALL materi2('H0001');
+========================================
+12 May 2020
+|                SELESAI               |
+========================================
+| Asal      : WAREHOUSE 1              |
+| Tujuan    : WAREHOUSE 4              |
+| Kendaraan : L 1 WOW                  |
+| Supir     : Budi Hartono             |
+|--------------------------------------|
+|                        Amanda Rahimah|
+========================================
+[Mon Apr 25 17:46:06 2022] 221116955>>DELIMITER $
+[Mon Apr 25 17:53:56 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    ->
+    -> SELECT CONCAT((DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("| Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("| Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("| Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("| Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT("|",LPAD(K.NAMA,38),"|"),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.KODE=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT CONCAT(RPAD(LPAD((TGL,(((38-LENGTH(TGL))/2)))),(16-LENGTH(TGL))));
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+FROM KARYAWAN K,SUPIR S, ...' at line 20
+[Mon Apr 25 17:53:56 2022] 221116955>>DELIMITER ;DELIMITER $
+[Mon Apr 25 17:54:31 2022] 221116955>>CREATE OR REPLACE PROCEDURE materi2(KODE VARCHAR(5))
+    -> BEGIN
+    -> DECLARE ID VARCHAR(5);
+    -> DECLARE TGL VARCHAR(100);
+    -> DECLARE STAT VARCHAR(100);
+    -> DECLARE ASAL VARCHAR(100);
+    -> DECLARE TUJUAN VARCHAR(100);
+    -> DECLARE NO_KEND VARCHAR(100);
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE NAMA_K VARCHAR(100);
+    ->
+    -> SELECT CONCAT((DAY(HP.TANGGAL)," ", MONTHNAME(HP.TANGGAL)," ", YEAR(HP.TANGGAL)),
+    -> CONCAT("| Asal      : WAREHOUSE ",HP.ASAL,"              |"), CONCAT("| Tujuan    : WAREHOUSE ",HP.TUJUAN,"              |"), CONCAT("| Kendaraan : ",RPAD(KN.NOPOL,25),"|"), CONCAT("| Supir     : ",RPAD(S.NAMA,25),"|"), CONCAT("|",LPAD(K.NAMA,38),"|"),
+    -> CONCAT(CASE
+    -> WHEN HP.ID_KARYAWAN IS NULL THEN
+    -> CONCAT("|              PERJALANAN              |")
+    -> ELSE
+    -> CONCAT("|                SELESAI               |")
+    -> END)
+    -> INTO TGL, ASAL, TUJUAN, NO_KEND,NAMA_S,NAMA_K, STAT
+    -> FROM KARYAWAN K,SUPIR S, KENDARAAN KN, H_PINDAH HP
+    -> WHERE HP.KODE=KODE AND HP.ID_KARYAWAN=K.ID AND HP.ID_SUPIR = S.ID AND HP.ID_KENDARAAN=KN.ID;
+    ->
+    -> SELECT "========================================";
+    -> SELECT TGL;
+    -> SELECT STAT;
+    -> SELECT "========================================";
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> SELECT NO_KEND;
+    -> SELECT NAMA_S;
+    -> SELECT "|--------------------------------------|";
+    -> SELECT NAMA_K;
+    -> SELECT "========================================";
+    -> END$
+    -> DELIMITER ;
+    -> ;
+    -> "
+    "> ;
+    "> '
+    "> ;
+    "> );
+    "> Ctrl-C -- exit

@@ -1,0 +1,62 @@
+--2
+Select k.nama as "Nama Karyawan",
+CONCAT(CASE
+	when k.gender = 'P' THEN CONCAT("    Wanita   ")
+	else CONCAT("     Pria    ")
+END) as "Jenis Kelamin",
+CONCAT(CASE
+	when k.email LIKE "%HOTMAIL%" then
+		CONCAT(" [HOTMAIL] ",k.email)
+	when k.email LIKE "%YAHOO%" then 
+		CONCAT (" [ YAHOO ] ",k.email)
+	when k.email LIKE "%GMAIL%" then
+		CONCAT(" [ GMAIL ] ",k.email)
+	END)
+as "Email Karyawan",
+m.nama as "Nama Manager",
+w.alamat as "Tempat Kerja"
+from karyawan k
+left join manager m
+on id_manager=m.id
+left join warehouse w
+on w.id=k.tempat_kerja
+where k.status=1
+order by LENGTH(k.nama), k.nama;
+
+--3
+Select k.nama as "Nama" from karyawan k
+where k.status=1
+UNION
+Select m.nama from manager m
+where m.status=1
+UNION
+Select s.nama from supir s
+where s.status=1,
+CONCAT(TIMESTAMPDIFF(YEAR,s.tanggal_lahir,CURDATE()), " tahun") as "Umur" from supir s
+UNION
+CONCAT(TIMESTAMPDIFF(YEAR,s.tanggal_lahir,CURDATE()), " tahun") from karyawan k
+UNION
+CONCAT(TIMESTAMPDIFF(YEAR,s.tanggal_lahir,CURDATE()), " tahun") from manager m;
+
+--4
+select RPAD(k.nama,18,"*") as "Nama Karyawan",
+CONCAT(DAYNAME(k.tanggal_lahir),", ",DAY(k.tanggal_lahir),"-",MONTH(k.tanggal_lahir),"-",DATE_FORMAT(k.tanggal_lahir, '%y')) as "Tanggal Lahir",
+CONCAT(CASE
+	when k.status=1 then
+		CONCAT("    [Aktif]    ")
+	when k.status=0 then
+		CONCAT("  [Non-Aktif]   ")
+	end) as "Status Karyawan"
+from karyawan k
+left join h_pindah hp on hp.id_karyawan=k.id
+where hp.id_karyawan is null;
+
+--5
+select fu.nama as "Nama Supplier", count(fu.kalisupply) as "Jumlah Supply"
+from
+(SELECT s.nama as "nama", hs.id_supplier as "kalisupply"
+from supplier s
+inner join h_supply hs on s.id = hs.id_supplier) fu
+group by fu.nama
+having count(kalisupply)>1
+order by SUBSTR(fu.nama,4) desc;

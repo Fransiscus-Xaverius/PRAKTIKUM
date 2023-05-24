@@ -1,0 +1,730 @@
+MariaDB [(none)]> prompt[\D] 221116955>>
+ERROR: Unknown command '\D'.
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'prompt[\D] 221116955>>' at line 1
+MariaDB [(none)]> prompt [\D] 221116955>>
+PROMPT set to '[\D] 221116955>>'
+[Mon May  9 17:25:32 2022] 221116955>>USE DB_EKSPEDISI;
+[Mon May  9 17:28:11 2022] 221116955>>SELECT * FROM KENDARAAN;
+1	L 1234 EW	TOYOTA	1	1
+2	L 1 WOW	FORD	1	1
+3	L 7693 BAC	MERCEDES BENZ	2	0
+4	D 1616 IT	TOYOTA	1	1
+5	AD 418 U	TOYOTA	2	1
+6	D 14 RE	MERCEDES BENZ	2	1
+7	L 38 AY	FORD	1	1
+8	K 4 SIH	MERCEDES BENZ	1	1
+[Mon May  9 17:28:18 2022] 221116955>>DESC KENDARAAN;
+id	int(10)	NO	PRI	NULL	
+nopol	varchar(12)	NO		NULL	
+merk	varchar(50)	NO		NULL	
+tipe	int(1)	NO		NULL	
+status	int(1)	NO		NULL	
+[Mon May  9 17:28:23 2022] 221116955>>DESC H_PINDAH;
+kode	varchar(5)	NO	PRI	NULL	
+asal	int(10)	NO	MUL	NULL	
+tujuan	int(10)	NO	MUL	NULL	
+tanggal	date	NO		NULL	
+id_kendaraan	int(10)	NO	MUL	NULL	
+id_supir	int(5)	NO		NULL	
+id_karyawan	int(10)	YES	MUL	NULL	
+total_qty	int(200)	NO		NULL	
+status	int(1)	NO		NULL	
+[Mon May  9 17:39:34 2022] 221116955>>DELIMITER $
+[Mon May  9 17:45:25 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL),23)),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ';
+DECLARE NOPOL VARCHAR(12);
+DECLARE MERK_K VARCHAR(50);
+DECLARE ID INT(10);
+...' at line 3
+[Mon May  9 17:45:25 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:45:26 2022] 221116955>>DELIMITER $
+[Mon May  9 17:45:54 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL),23)),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+ERROR 1582 (42000): Incorrect parameter count in the call to native function 'RPAD'
+[Mon May  9 17:45:54 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:45:54 2022] 221116955>>DELIMITER $
+[Mon May  9 17:46:29 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23)),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ');
+SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+SELECT '#---------...' at line 41
+[Mon May  9 17:46:29 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:46:29 2022] 221116955>>DELIMITER $
+[Mon May  9 17:47:48 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23)),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",ASAL,"             |");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ');
+SELECT CONCAT("| Asal : WAREHOUSE ",ASAL,"             |");
+SELECT '#-----...' at line 41
+[Mon May  9 17:47:48 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:47:48 2022] 221116955>>DELIMITER $
+[Mon May  9 17:48:52 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:48:52 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:48:52 2022] 221116955>>call TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+ERROR 1326 (24000): Cursor is not open
+[Mon May  9 17:49:10 2022] 221116955>>DELIMITER $
+[Mon May  9 17:49:28 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> OPEN LIST;
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:49:28 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:49:28 2022] 221116955>>call TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+#----------------------------------#
+NULL
+NULL
+#----------------------------------#
+[Mon May  9 17:49:34 2022] 221116955>>SELECT * FROM SUPIR;
+1	Budi Hartono	081354692835	1999-11-09	L	budi@gmail.com	Jalan Ku Menuju Jalan Mu No. 81	1
+2	Vinsent Setiawan	081768354695	1993-03-13	L	vinsent@gmail.com	Jalan Mangga Dua No. 01	1
+3	Davidson Harley	082865739562	1945-07-17	L	davidson@yahoo.com	Perumahan Elit Mahal Sekali Blok AA No. 509	0
+4	Enzo Ferrari	082165936507	1967-04-21	L	enzo@gmail.com	Jalan Persimpangan Antah Berantah No. 101	0
+5	Ferruccio Lamborgini	081678432659	1973-11-01	L	ferruccino@gmail.com	Perumahan Dimana Saja Senang No. 88	1
+6	Victor Tatin	081224367194	1996-12-31	L	victor@yahoo.com	Jalan Apel Jatuh No. 52	0
+7	Auristela Tatum	081946850036	1989-05-25	P	auristela@gmail.com	Perumahan Durian Runtuh No. 45	1
+8	Agnia Chelsea	082945271903	1979-09-16	P	agnia@yahoo.com	Jalan Dia Tak Lagi Jalan Mu No. 75	1
+9	Ekavira Fawnia	081746382947	1988-09-15	P	ekavira@gmail.com	Jalan Menuju Tak Terbatas Dan Melampauinya No. 34	1
+10	Jason Setiawan	081756908327	1998-10-23	L	jasons4321@gmail.com	Jalan Kemana Saja Senang No. 91	1
+[Mon May  9 17:50:22 2022] 221116955>>DESC HP_PINDHA;
+ERROR 1146 (42S02): Table 'db_ekspedisi.hp_pindha' doesn't exist
+[Mon May  9 17:50:26 2022] 221116955>>DESC HP_PINDAH;
+ERROR 1146 (42S02): Table 'db_ekspedisi.hp_pindah' doesn't exist
+[Mon May  9 17:50:29 2022] 221116955>>DESC H_PINDAH;
+kode	varchar(5)	NO	PRI	NULL	
+asal	int(10)	NO	MUL	NULL	
+tujuan	int(10)	NO	MUL	NULL	
+tanggal	date	NO		NULL	
+id_kendaraan	int(10)	NO	MUL	NULL	
+id_supir	int(5)	NO		NULL	
+id_karyawan	int(10)	YES	MUL	NULL	
+total_qty	int(200)	NO		NULL	
+status	int(1)	NO		NULL	
+[Mon May  9 17:50:34 2022] 221116955>>DELIMITER $
+[Mon May  9 17:51:00 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> OPEN LIST;
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID and S.ID=HP.ID_SUPIR;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:51:00 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:51:00 2022] 221116955>>CALL TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+#----------------------------------#
+NULL
+NULL
+#----------------------------------#
+[Mon May  9 17:51:06 2022] 221116955>>DELIMITER $
+[Mon May  9 17:53:04 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> OPEN LIST;
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID and S.ID=HP.ID_SUPIR;
+    -> 
+    -> SELECT NAMA_S;
+    -> SELECT TGL;
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:53:04 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:53:04 2022] 221116955>>CALL TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+NULL
+NULL
+NULL
+NULL
+#----------------------------------#
+NULL
+NULL
+#----------------------------------#
+[Mon May  9 17:53:09 2022] 221116955>>DESC H_PINDAH;
+kode	varchar(5)	NO	PRI	NULL	
+asal	int(10)	NO	MUL	NULL	
+tujuan	int(10)	NO	MUL	NULL	
+tanggal	date	NO		NULL	
+id_kendaraan	int(10)	NO	MUL	NULL	
+id_supir	int(5)	NO		NULL	
+id_karyawan	int(10)	YES	MUL	NULL	
+total_qty	int(200)	NO		NULL	
+status	int(1)	NO		NULL	
+[Mon May  9 17:53:38 2022] 221116955>>DELIMITER $
+[Mon May  9 17:54:35 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> OPEN LIST;
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.ID_KENDARAAN=ID and S.ID=HP.ID_SUPIR
+    -> GROUP BY HP.KODE;
+    -> 
+    -> SELECT NAMA_S;
+    -> SELECT TGL;
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:54:35 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:54:35 2022] 221116955>>CALL TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+NULL
+NULL
+NULL
+NULL
+#----------------------------------#
+NULL
+NULL
+#----------------------------------#
+[Mon May  9 17:54:39 2022] 221116955>>DELIMITER $
+[Mon May  9 17:55:33 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> OPEN LIST;
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.KODE=ID and S.ID=HP.ID_SUPIR;
+    -> 
+    -> SELECT NAMA_S;
+    -> SELECT TGL;
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:55:34 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:55:34 2022] 221116955>>CALL TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+ERROR 1172 (42000): Result consisted of more than one row
+[Mon May  9 17:55:38 2022] 221116955>>DELIMITER $
+[Mon May  9 17:55:56 2022] 221116955>>CREATE OR REPLACE PROCEDURE TA1(SEARCH_ID INT(10))
+    -> BEGIN
+    -> DECLARE CEK_KOSONG INT;
+    -> DECLARE NOPOL VARCHAR(12);
+    -> DECLARE MERK_K VARCHAR(50);
+    -> DECLARE ID INT(10);
+    -> 
+    -> DECLARE NAMA_S VARCHAR(100);
+    -> DECLARE TGL DATE;
+    -> DECLARE ASAL INT;
+    -> DECLARE TUJUAN INT;
+    -> 
+    -> DECLARE LIST CURSOR FOR
+    -> SELECT HP.KODE
+    -> FROM H_PINDAH HP
+    -> WHERE ID_KENDARAAN=SEARCH_ID
+    -> ORDER BY HP.TANGGAL;
+    -> 
+    -> DECLARE CONTINUE HANDLER
+    -> FOR NOT FOUND SET CEK_KOSONG = 1;
+    -> 
+    -> SELECT K.NOPOL, K.MERK INTO NOPOL, MERK_K
+    -> FROM KENDARAAN K
+    -> WHERE K.ID=SEARCH_ID;
+    -> 
+    -> SELECT '#==================================#';
+    -> SELECT CONCAT("|",LPAD(NOPOL,17)," - ",RPAD(MERK_K,14),"|");
+    -> SELECT '#==================================#';
+    -> 
+    -> OPEN LIST;
+    -> 
+    -> LUPS: LOOP
+    -> FETCH LIST INTO ID;
+    -> 
+    -> IF CEK_KOSONG=1 THEN
+    -> LEAVE LUPS;
+    -> ELSE
+    -> SELECT S.NAMA, HP.TANGGAL, HP.ASAL, HP.TUJUAN INTO NAMA_S,TGL,ASAL,TUJUAN
+    -> FROM SUPIR S, H_PINDAH HP
+    -> WHERE HP.KODE=ID and S.ID=HP.ID_SUPIR
+    -> GROUP BY HP.KODE;
+    -> 
+    -> SELECT NAMA_S;
+    -> SELECT TGL;
+    -> SELECT ASAL;
+    -> SELECT TUJUAN;
+    -> 
+    -> SELECT '#----------------------------------#';
+    -> SELECT CONCAT("| Tanggal : ",RPAD(CONCAT(DAY(TGL)," ",MONTHNAME(TGL),YEAR(TGL)),23),"|");
+    -> SELECT CONCAT("| Asal : WAREHOUSE ",RPAD(ASAL,13),"|");
+    -> SELECT '#----------------------------------#';
+    -> END IF;
+    -> 
+    -> END LOOP LUPS;
+    -> CLOSE LIST;
+    -> 
+    -> END$
+[Mon May  9 17:55:57 2022] 221116955>>DELIMITER ;
+[Mon May  9 17:55:57 2022] 221116955>>CALL TA1(5);
+#==================================#
+|         AD 418 U - TOYOTA        |
+#==================================#
+ERROR 1172 (42000): Result consisted of more than one row
+[Mon May  9 17:56:01 2022] 221116955>>NOTEE;

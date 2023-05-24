@@ -1,0 +1,3370 @@
+MariaDB [db_ekspedisi]> prompt[\D] 221116955;
+ERROR: Unknown command '\D'.
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'prompt[\D] 221116955' at line 1
+MariaDB [db_ekspedisi]> prompt[\D] 221116955
+ERROR: Unknown command '\D'.
+    -> prompt[\D] 221116955 >>
+ERROR: Unknown command '\D'.
+    -> prompt [\D] 221116955 >>
+ERROR: Unknown command '\D'.
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'prompt[\D] 221116955
+prompt[\D] 221116955 >>
+prompt [\D] 221116955 >>' at line 1
+MariaDB [db_ekspedisi]> prompt [\D] 221116955
+PROMPT set to '[\D] 221116955'
+[Mon Apr 18 16:50:17 2022] 221116955select * from barang;
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+| id | kode   | nama                      | harga    | id_merk | id_kategori | qty | status | keterangan                                    |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+|  1 | BI1001 | IPHONE 13                 | 21000000 |       2 |           2 |  25 |      1 | RAM 6GB ROM 256GB                             |
+|  2 | BI1002 | IPHONE 13 PRO             | 25000000 |       2 |           2 |  30 |      1 | RAM 8GB ROM 512GB                             |
+|  3 | BI1003 | IPHONE 13 PRO MAX         | 27000000 |       2 |           2 |  30 |      1 | RAM 6GB ROM 1TB                               |
+|  4 | BSS001 | SAMSUNG S20               | 18500000 |       1 |           2 |  15 |      1 | NULL                                          |
+|  5 | BSS002 | SAMSUNG S21               | 21700000 |       1 |           2 |  20 |      1 | NULL                                          |
+|  6 | BAZ001 | ASUS ZEPHYRUS DUO PRO     | 35000000 |       6 |           1 |  15 |      1 | RAM 16GB ROM 1TB HYPER COOLING FREE MS OFFICE |
+|  7 | BAT001 | ASUS TUF FX 506 GT        | 16000000 |       6 |           1 |  17 |      1 | RAM 8GB ROM 512GB RBG BACKLIT KEYBOARD        |
+|  8 | BLG001 | LOGITECH G703             |  1550000 |       7 |           3 |  14 |      1 | 1000Hz Polling Rate 12.000 DPI WIRELESS       |
+|  9 | BLG002 | LOGITECH G102             |   250000 |       7 |           3 |  30 |      1 | 1000Hz Polling Rate 8.000 DPI                 |
+| 10 | BLG003 | LOGITECH G PRO X          |  2500000 |       7 |           4 |   0 |      0 | 1000Hz Polling Rate 25.600 DPI                |
+| 11 | BLM001 | LOGITECH MK 295           |   175000 |       7 |           4 |   5 |      1 | NULL                                          |
+| 12 | BSX003 | SONY XPERIA XZ1           |  2630000 |       5 |           2 |   7 |      1 | NULL                                          |
+| 13 | BSX004 | SONY XPERIA XZ2           |  3000000 |       5 |           2 |   9 |      1 | NULL                                          |
+| 14 | BVX001 | VIVO X70                  |  2550000 |       4 |           2 |  10 |      1 | NULL                                          |
+| 15 | BVV002 | VIVO V21 5G               |  3750000 |       4 |           2 |  15 |      1 | NULL                                          |
+| 16 | BOF001 | OPPO FIND X3 PRO          |  4700000 |       3 |           2 |  12 |      1 | NULL                                          |
+| 17 | BOR001 | OPPO RENO 5               |  4999000 |       3 |           2 |  15 |      1 | NULL                                          |
+| 18 | BOR002 | OPPO RENO 6               |  5799000 |       3 |           2 |   0 |      0 | NULL                                          |
+| 19 | BSF001 | SanDisk Flash Drive 16GB  |    59000 |       8 |           5 |  17 |      1 | MERAH, HITAM, PUTIH                           |
+| 20 | BSF002 | SanDisk Flash Drive 32GB  |    74000 |       8 |           5 |  39 |      1 | MERAH, HITAM                                  |
+| 21 | BSF003 | SanDisk Flash Drive 64GB  |    99900 |       8 |           5 |   4 |      1 | HITAM, PUTIH                                  |
+| 22 | BSF004 | SanDisk Flash Drive 128GB |   139000 |       8 |           5 |  10 |      1 | MERAH, HITAM, PUTIH, BIRU                     |
+| 23 | BGG001 | GeForce GTX 1650          |  5490000 |       9 |           6 |   5 |      1 | 4GB GDDR6                                     |
+| 24 | BGG002 | GeForce GTX 1650 Ti       |  5799000 |       9 |           6 |  14 |      1 | 5GB GDDR6                                     |
+| 25 | BGR001 | GeForce RTX 2080          | 14890000 |       9 |           6 |   8 |      1 | NULL                                          |
+| 26 | BGR002 | GeForce RTX 2080 Ti       | 17890000 |       9 |           6 |  21 |      1 | 8GB GDDR6                                     |
+| 27 | BGR003 | GeForce RTX 3060          | 12450000 |       9 |           6 |  10 |      1 | 8GB GDDR6                                     |
+| 28 | BGR004 | GeForce RTX 3060 Ti       | 14500000 |       9 |           6 |   0 |      0 | 12GB GDDR6                                    |
+| 29 | BGR005 | GeForce RTX 3080          | 22650000 |       9 |           6 |   5 |      1 | 12GB GDDR6                                    |
+| 30 | BGR006 | GeForce RTX 3090          | 42750000 |       9 |           6 |  13 |      1 | 24GB GDDR6                                    |
+| 31 | BEA001 | Earphone                  |    15999 |    NULL |        NULL |  20 |      1 | Warna Hitam                                   |
+| 32 | BHE001 | Headphone                 |    57750 |    NULL |        NULL |   4 |      1 | Warna Silver                                  |
+| 33 | BFL001 | Flashdisk                 |    32500 |    NULL |           5 |   8 |      1 | 4 GB Merah                                    |
+| 34 | BCH001 | Charger                   |    25000 |       1 |        NULL |  12 |      1 | Micro USB/Type B                              |
+| 35 | BKA001 | Kabel AUX                 |    17000 |    NULL |        NULL |  10 |      1 | NULL                                          |
+| 36 | BSP001 | Speaker                   |    25000 |    NULL |        NULL |   5 |      1 | NULL                                          |
+| 37 | BRT001 | Remote TV                 |    14500 |    NULL |        NULL |   7 |      1 | Universal                                     |
+| 38 | BRA001 | Remote AC                 |    15750 |    NULL |        NULL |  11 |      1 | Universal                                     |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+38 rows in set (0.002 sec)
+
+[Mon Apr 18 16:52:43 2022] 221116955select * from merk;
++----+----------+
+| id | nama     |
++----+----------+
+|  1 | SAMSUNG  |
+|  2 | APPLE    |
+|  3 | OPPO     |
+|  4 | VIVO     |
+|  5 | SONY     |
+|  6 | ASUS     |
+|  7 | LOGITECH |
+|  8 | SANDDISK |
+|  9 | NVIDIA   |
++----+----------+
+9 rows in set (0.039 sec)
+
+[Mon Apr 18 16:52:55 2022] 221116955Select nr.Merk as "Nama Merk", nr.avrg as "Harga Rata-rata"
+    -> from 
+    -> (select m.id, b.harga
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> ) nr
+    -> where AVG(b.harga)<b.harga;
+ERROR 1054 (42S22): Unknown column 'nr.Merk' in 'field list'
+[Mon Apr 18 16:56:11 2022] 221116955Select nr.Merk as "Nama Merk", nr.avrg as "Harga Rata-rata"
+    -> from 
+    -> (select m.id, b.harga
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> ) nr
+    -> where AVG(nr.harga)<nr.harga;
+ERROR 1054 (42S22): Unknown column 'nr.Merk' in 'field list'
+[Mon Apr 18 16:56:53 2022] 221116955Select nr.Merk as "Nama Merk", nr.avrg as "Harga Rata-rata"
+    -> from 
+    -> (select m.id as "Merk", b.harga as "Harga"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> ) nr
+    -> where AVG(nr.harga)<nr.harga;
+ERROR 1054 (42S22): Unknown column 'nr.avrg' in 'field list'
+[Mon Apr 18 16:57:15 2022] 221116955Select nr.Merk as "Nama Merk", nr.avrg as "Harga Rata-rata"
+    -> from 
+    -> (select m.id as "Merk", b.harga as "avrg"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> ) nr
+    -> where AVG(nr.harga)<nr.harga;
+ERROR 1111 (HY000): Invalid use of group function
+[Mon Apr 18 16:57:24 2022] 221116955Select nr.Merk as "Nama Merk", nr.harga as "Harga Rata-rata"
+    -> from 
+    -> (select m.id as "Merk", b.harga as "harga"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> ) nr
+    -> join barang b
+    -> where AVG(b.harga) < nr.harga;
+ERROR 1111 (HY000): Invalid use of group function
+[Mon Apr 18 16:59:14 2022] 221116955Select nr.Merk as "Nama Merk", nr.harga as "Harga Rata-rata"
+    -> from 
+    -> (select m.id as "Merk", b.harga as "harga"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> ) nr
+    -> join barang b
+    -> having AVG(b.harga) < nr.harga;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+|         1 |        18500000 |
++-----------+-----------------+
+1 row in set (0.001 sec)
+
+[Mon Apr 18 16:59:35 2022] 221116955Select nr.Merk as "Nama Merk", nr.harga as "Harga Rata-rata"
+    -> from 
+    -> (select m.nama as "Merk", b.harga as "harga"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> group by m.nama
+    -> ) nr
+    -> join barang b
+    -> having AVG(b.harga) < nr.harga;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+| APPLE     |        21000000 |
++-----------+-----------------+
+1 row in set (0.001 sec)
+
+[Mon Apr 18 17:00:17 2022] 221116955Select nr.Merk as "Nama Merk", nr.harga as "Harga Rata-rata"
+    -> from 
+    -> (select m.nama as "Merk", b.harga as "harga"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> group by m.nama
+    -> ) nr
+    -> join barang b
+    -> having AVG(b.harga) < nr.harga
+    -> group by nr.Merk;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group by nr.Merk' at line 10
+[Mon Apr 18 17:04:39 2022] 221116955Select m.merk as "Nama Merk", b.harga as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b
+    -> where b.id_merk = m.id)
+    -> group by m.nama;
+ERROR 1054 (42S22): Unknown column 'm.merk' in 'field list'
+[Mon Apr 18 17:08:55 2022] 221116955Select m.nama as "Nama Merk", b.harga as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b
+    -> where b.id_merk = m.id)
+    -> group by m.nama;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+| APPLE     |        25000000 |
+| ASUS      |        35000000 |
+| LOGITECH  |         1550000 |
+| NVIDIA    |        17890000 |
+| OPPO      |         5799000 |
+| SAMSUNG   |        18500000 |
+| SANDDISK  |           99900 |
+| SONY      |         3000000 |
+| VIVO      |         3750000 |
++-----------+-----------------+
+9 rows in set (0.001 sec)
+
+[Mon Apr 18 17:09:09 2022] 221116955Select m.nama as "Nama Merk", b.harga as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where avg(b.harga)<
+    -> (select b.harga
+    -> from barang b
+    -> where b.id_merk = m.id)
+    -> group by m.nama;
+ERROR 1111 (HY000): Invalid use of group function
+[Mon Apr 18 17:11:34 2022] 221116955Select m.nama as "Nama Merk", b.harga as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where select(avg(b.harga) from barang b)<
+    -> (select b.harga
+    -> from barang b
+    -> where b.id_merk = m.id)
+    -> group by m.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'select(avg(b.harga) from barang b)<
+(select b.harga
+from barang b
+where b.id_...' at line 4
+[Mon Apr 18 17:12:03 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",b.harga) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b
+    -> where b.id_merk = m.id)
+    -> group by m.nama;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+| APPLE     | Rp. 25000000    |
+| ASUS      | Rp. 35000000    |
+| LOGITECH  | Rp. 1550000     |
+| NVIDIA    | Rp. 17890000    |
+| OPPO      | Rp. 5799000     |
+| SAMSUNG   | Rp. 18500000    |
+| SANDDISK  | Rp. 99900       |
+| SONY      | Rp. 3000000     |
+| VIVO      | Rp. 3750000     |
++-----------+-----------------+
+9 rows in set (0.001 sec)
+
+[Mon Apr 18 17:13:32 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",b.harga) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> having b.harga>
+    -> (select avg(b.harga)
+    -> from barang b
+    -> where b.id_merk = m.id)
+    -> group by m.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group by m.nama' at line 8
+[Mon Apr 18 17:15:12 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",b.harga) as "Harga Rata-rata"
+    -> from merk m
+    -> join barang b on m.id=b.id_merk
+    -> group by m.nama
+    -> having avg(b.harga) > avg(
+    -> (select b.harga
+    -> from barang b
+    -> group by b.nama)
+    -> );
+ERROR 1242 (21000): Subquery returns more than 1 row
+[Mon Apr 18 17:19:08 2022] 221116955select * from barang;
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+| id | kode   | nama                      | harga    | id_merk | id_kategori | qty | status | keterangan                                    |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+|  1 | BI1001 | IPHONE 13                 | 21000000 |       2 |           2 |  25 |      1 | RAM 6GB ROM 256GB                             |
+|  2 | BI1002 | IPHONE 13 PRO             | 25000000 |       2 |           2 |  30 |      1 | RAM 8GB ROM 512GB                             |
+|  3 | BI1003 | IPHONE 13 PRO MAX         | 27000000 |       2 |           2 |  30 |      1 | RAM 6GB ROM 1TB                               |
+|  4 | BSS001 | SAMSUNG S20               | 18500000 |       1 |           2 |  15 |      1 | NULL                                          |
+|  5 | BSS002 | SAMSUNG S21               | 21700000 |       1 |           2 |  20 |      1 | NULL                                          |
+|  6 | BAZ001 | ASUS ZEPHYRUS DUO PRO     | 35000000 |       6 |           1 |  15 |      1 | RAM 16GB ROM 1TB HYPER COOLING FREE MS OFFICE |
+|  7 | BAT001 | ASUS TUF FX 506 GT        | 16000000 |       6 |           1 |  17 |      1 | RAM 8GB ROM 512GB RBG BACKLIT KEYBOARD        |
+|  8 | BLG001 | LOGITECH G703             |  1550000 |       7 |           3 |  14 |      1 | 1000Hz Polling Rate 12.000 DPI WIRELESS       |
+|  9 | BLG002 | LOGITECH G102             |   250000 |       7 |           3 |  30 |      1 | 1000Hz Polling Rate 8.000 DPI                 |
+| 10 | BLG003 | LOGITECH G PRO X          |  2500000 |       7 |           4 |   0 |      0 | 1000Hz Polling Rate 25.600 DPI                |
+| 11 | BLM001 | LOGITECH MK 295           |   175000 |       7 |           4 |   5 |      1 | NULL                                          |
+| 12 | BSX003 | SONY XPERIA XZ1           |  2630000 |       5 |           2 |   7 |      1 | NULL                                          |
+| 13 | BSX004 | SONY XPERIA XZ2           |  3000000 |       5 |           2 |   9 |      1 | NULL                                          |
+| 14 | BVX001 | VIVO X70                  |  2550000 |       4 |           2 |  10 |      1 | NULL                                          |
+| 15 | BVV002 | VIVO V21 5G               |  3750000 |       4 |           2 |  15 |      1 | NULL                                          |
+| 16 | BOF001 | OPPO FIND X3 PRO          |  4700000 |       3 |           2 |  12 |      1 | NULL                                          |
+| 17 | BOR001 | OPPO RENO 5               |  4999000 |       3 |           2 |  15 |      1 | NULL                                          |
+| 18 | BOR002 | OPPO RENO 6               |  5799000 |       3 |           2 |   0 |      0 | NULL                                          |
+| 19 | BSF001 | SanDisk Flash Drive 16GB  |    59000 |       8 |           5 |  17 |      1 | MERAH, HITAM, PUTIH                           |
+| 20 | BSF002 | SanDisk Flash Drive 32GB  |    74000 |       8 |           5 |  39 |      1 | MERAH, HITAM                                  |
+| 21 | BSF003 | SanDisk Flash Drive 64GB  |    99900 |       8 |           5 |   4 |      1 | HITAM, PUTIH                                  |
+| 22 | BSF004 | SanDisk Flash Drive 128GB |   139000 |       8 |           5 |  10 |      1 | MERAH, HITAM, PUTIH, BIRU                     |
+| 23 | BGG001 | GeForce GTX 1650          |  5490000 |       9 |           6 |   5 |      1 | 4GB GDDR6                                     |
+| 24 | BGG002 | GeForce GTX 1650 Ti       |  5799000 |       9 |           6 |  14 |      1 | 5GB GDDR6                                     |
+| 25 | BGR001 | GeForce RTX 2080          | 14890000 |       9 |           6 |   8 |      1 | NULL                                          |
+| 26 | BGR002 | GeForce RTX 2080 Ti       | 17890000 |       9 |           6 |  21 |      1 | 8GB GDDR6                                     |
+| 27 | BGR003 | GeForce RTX 3060          | 12450000 |       9 |           6 |  10 |      1 | 8GB GDDR6                                     |
+| 28 | BGR004 | GeForce RTX 3060 Ti       | 14500000 |       9 |           6 |   0 |      0 | 12GB GDDR6                                    |
+| 29 | BGR005 | GeForce RTX 3080          | 22650000 |       9 |           6 |   5 |      1 | 12GB GDDR6                                    |
+| 30 | BGR006 | GeForce RTX 3090          | 42750000 |       9 |           6 |  13 |      1 | 24GB GDDR6                                    |
+| 31 | BEA001 | Earphone                  |    15999 |    NULL |        NULL |  20 |      1 | Warna Hitam                                   |
+| 32 | BHE001 | Headphone                 |    57750 |    NULL |        NULL |   4 |      1 | Warna Silver                                  |
+| 33 | BFL001 | Flashdisk                 |    32500 |    NULL |           5 |   8 |      1 | 4 GB Merah                                    |
+| 34 | BCH001 | Charger                   |    25000 |       1 |        NULL |  12 |      1 | Micro USB/Type B                              |
+| 35 | BKA001 | Kabel AUX                 |    17000 |    NULL |        NULL |  10 |      1 | NULL                                          |
+| 36 | BSP001 | Speaker                   |    25000 |    NULL |        NULL |   5 |      1 | NULL                                          |
+| 37 | BRT001 | Remote TV                 |    14500 |    NULL |        NULL |   7 |      1 | Universal                                     |
+| 38 | BRA001 | Remote AC                 |    15750 |    NULL |        NULL |  11 |      1 | Universal                                     |
++----+--------+---------------------------+----------+---------+-------------+-----+--------+-----------------------------------------------+
+38 rows in set (0.000 sec)
+
+[Mon Apr 18 17:23:14 2022] 221116955select * from kategori;
++----+-----------+
+| id | nama      |
++----+-----------+
+|  1 | LAPTOP    |
+|  2 | HANDPHONE |
+|  3 | MOUSE     |
+|  4 | KEYBOARD  |
+|  5 | FLASHDISK |
+|  6 | VGA       |
++----+-----------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 18 17:23:40 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> where b.qty<10 and b.nama like "%I%";
++---------------------------+----------+-----------+
+| Nama Barang               | Merk     | Kategori  |
++---------------------------+----------+-----------+
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
++---------------------------+----------+-----------+
+210 rows in set (0.001 sec)
+
+[Mon Apr 18 17:27:09 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> where b.qty<10 and b.nama like "%I%"
+    -> group by m.nama;
+ERROR 1054 (42S22): Unknown column 'm.nama' in 'group statement'
+[Mon Apr 18 17:27:31 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b, 
+    -> where b.qty<10 and b.nama like "%I%"
+    -> group by nt.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where b.qty<10 and b.nama like "%I%"
+group by nt.nama' at line 7
+[Mon Apr 18 17:27:43 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b, 
+    -> where b.qty<10 and b.nama like "%I%")
+    -> group by nt.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'where b.qty<10 and b.nama like "%I%")
+group by nt.nama' at line 7
+[Mon Apr 18 17:27:55 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> where b.qty<10 and b.nama like "%I%"
+    -> group by nt.nama;
++---------------------------+----------+-----------+
+| Nama Barang               | Merk     | Kategori  |
++---------------------------+----------+-----------+
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
++---------------------------+----------+-----------+
+30 rows in set (0.001 sec)
+
+[Mon Apr 18 17:28:11 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b, merk m
+    -> where b.qty<10 and b.nama like "%I%"
+    -> group by m.nama;
++-------------+---------+-----------+
+| Nama Barang | Merk    | Kategori  |
++-------------+---------+-----------+
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
++-------------+---------+-----------+
+9 rows in set (0.002 sec)
+
+[Mon Apr 18 17:28:35 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b, merk m
+    -> where b.qty<10 and b.nama like '%I%'
+    -> group by m.nama;
++-------------+---------+-----------+
+| Nama Barang | Merk    | Kategori  |
++-------------+---------+-----------+
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
++-------------+---------+-----------+
+9 rows in set (0.002 sec)
+
+[Mon Apr 18 17:29:05 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b, merk m
+    -> where b.qty<10 and b.nama like '%I%'
+    -> ;
++---------------------------+----------+-----------+
+| Nama Barang               | Merk     | Kategori  |
++---------------------------+----------+-----------+
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
++---------------------------+----------+-----------+
+1890 rows in set (0.001 sec)
+
+[Mon Apr 18 17:29:24 2022] 221116955sSelect nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> where b.qty<10 and b.nama like '%I%';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sSelect nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori...' at line 1
+[Mon Apr 18 17:30:14 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> where b.qty<10 and b.nama like '%I%';
++---------------------------+----------+-----------+
+| Nama Barang               | Merk     | Kategori  |
++---------------------------+----------+-----------+
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
++---------------------------+----------+-----------+
+210 rows in set (0.001 sec)
+
+[Mon Apr 18 17:30:33 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> where b.qty<10 and b.nama like '%I%'
+    -> group by b.nama;
++-------------+---------+-----------+
+| Nama Barang | Merk    | Kategori  |
++-------------+---------+-----------+
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
+| SAMSUNG S20 | SAMSUNG | HANDPHONE |
++-------------+---------+-----------+
+7 rows in set (0.001 sec)
+
+[Mon Apr 18 17:30:54 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt, barang b
+    -> having b.qty<10 and b.nama like '%I%'
+    -> group by b.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'group by b.nama' at line 8
+[Mon Apr 18 17:31:56 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id
+    -> join kategori k on k.id=b.id_kategori) nt;
++---------------------------+----------+-----------+
+| Nama Barang               | Merk     | Kategori  |
++---------------------------+----------+-----------+
+| SAMSUNG S20               | SAMSUNG  | HANDPHONE |
+| SAMSUNG S21               | SAMSUNG  | HANDPHONE |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| OPPO RENO 5               | OPPO     | HANDPHONE |
+| OPPO RENO 6               | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| ASUS ZEPHYRUS DUO PRO     | ASUS     | LAPTOP    |
+| ASUS TUF FX 506 GT        | ASUS     | LAPTOP    |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650          | NVIDIA   | VGA       |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080          | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060          | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3080          | NVIDIA   | VGA       |
+| GeForce RTX 3090          | NVIDIA   | VGA       |
++---------------------------+----------+-----------+
+30 rows in set (0.000 sec)
+
+[Mon Apr 18 17:32:23 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id 
+    -> join kategori k on k.id=b.id_kategori
+    -> where b.qty<10 and b.nama like '%I%') nt;
++--------------------------+----------+-----------+
+| Nama Barang              | Merk     | Kategori  |
++--------------------------+----------+-----------+
+| SONY XPERIA XZ1          | SONY     | HANDPHONE |
+| SONY XPERIA XZ2          | SONY     | HANDPHONE |
+| LOGITECH G PRO X         | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295          | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 64GB | SANDDISK | FLASHDISK |
+| GeForce RTX 3060 Ti      | NVIDIA   | VGA       |
++--------------------------+----------+-----------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 18 17:33:04 2022] 221116955select * from karyawan;
++----+---------------------+--------------+---------------+--------+-----------------------------------+--------------+------------+--------+
+| id | nama                | telp         | tanggal_lahir | gender | email                             | tempat_kerja | id_manager | status |
++----+---------------------+--------------+---------------+--------+-----------------------------------+--------------+------------+--------+
+|  1 | Gadang Prayoga      | 081284750381 | 1977-01-11    | L      | Gadang_Prayoga1@hotmail.com       |            2 |          1 |      1 |
+|  2 | Gamani Mahendra     | 081485037152 | 1958-06-20    | L      | Gamani_Mahendra148@hotmail.com    |            3 |          2 |      1 |
+|  3 | Amanda Rahimah      | 081957603756 | 1981-04-14    | P      | Amanda_Rahimah472@hotmail.com     |            4 |          3 |      1 |
+|  4 | Darrell Simanjuntak | 081485730271 | 1964-07-02    | L      | Darrell_Simanjuntak582@gmail.com  |            5 |          4 |      1 |
+|  5 | Jaswadi Tarihoran   | 081937562291 | 1964-07-20    | L      | Jaswadi_Tarihoran125@hotmail.com  |            2 |          1 |      1 |
+|  6 | Jacqueline Yuniar   | 081055869925 | 1953-03-21    | P      | Jacqueline_Yuniar379@yahoo.com    |            4 |          3 |      1 |
+|  7 | Fred Siregar        | 081850788261 | 1985-02-16    | L      | Fred_Siregar344@gmail.com         |            2 |          1 |      1 |
+|  8 | Cindy Utami         | 081286709912 | 1967-12-04    | P      | Cindy_Utami536@yahoo.com          |            2 |          1 |      1 |
+|  9 | Corey Halim         | 081079896721 | 1968-06-22    | L      | Corey_Halim261@yahoo.com          |            3 |          2 |      0 |
+| 10 | Gandi Prabowo       | 081132436573 | 1964-05-09    | L      | Gandi_Prabowo15@yahoo.com         |            5 |          4 |      1 |
+| 11 | Fitriani Yolanda    | 081875463548 | 1965-12-15    | P      | Fitriani_Yolanda998@yahoo.com     |            3 |          2 |      1 |
+| 12 | Richard Napitupulu  | 081875463577 | 1968-12-18    | L      | Richard_Napitupulu921@hotmail.com |            4 |          3 |      0 |
+| 13 | Elvina Permata      | 081876504943 | 1997-10-28    | P      | Elvina_Permata36@gmail.com        |            3 |          2 |      1 |
+| 14 | Lindsey Hasanah     | 081785645991 | 1959-05-19    | P      | Lindsey_Hasanah886@yahoo.com      |            4 |          3 |      1 |
+| 15 | Andrea Oktaviani    | 081811245360 | 1967-03-22    | P      | Andrea_Oktaviani56@yahoo.com      |            5 |          4 |      1 |
+| 16 | Molly Wijayanti     | 081957352895 | 1975-09-12    | P      | Molly_Wijayanti327@yahoo.com      |            3 |          2 |      1 |
+| 17 | Lala Nuraini        | 081078463548 | 1977-03-19    | P      | Lala_Nuraini694@gmail.com         |            5 |          4 |      1 |
+| 18 | Vincent Prasasta    | 081978455652 | 1952-10-22    | L      | Vincent_Prasasta787@yahoo.com     |            3 |          2 |      1 |
+| 19 | Tammy Farida        | 081226633554 | 1968-07-30    | P      | Tammy_Farida242@yahoo.com         |            5 |          4 |      1 |
+| 20 | Joshua Sihotang     | 081088965483 | 1980-11-07    | L      | Joshua_Sihotang564@yahoo.com      |            4 |          3 |      0 |
+| 21 | Darmaji Firmansyah  | 081756358562 | 1969-11-22    | L      | Darmaji_Firmansyah166@hotmail.com |            2 |          1 |      0 |
+| 22 | Tari Prastuti       | 081768462512 | 1951-08-25    | P      | Tari_Prastuti232@gmail.com        |            3 |          2 |      1 |
+| 23 | Michele Maryati     | 081576846251 | 1958-04-20    | P      | Michele_Maryati702@hotmail.com    |            4 |          3 |      1 |
+| 24 | Kevin Budiman       | 081787845302 | 1973-05-31    | P      | Kevin_Budiman233@yahoo.com        |            2 |          1 |      1 |
+| 25 | Ashley Puspita      | 081596845381 | 1973-08-08    | P      | Ashley_Puspita827@hotmail.com     |            3 |          2 |      1 |
++----+---------------------+--------------+---------------+--------+-----------------------------------+--------------+------------+--------+
+25 rows in set (0.000 sec)
+
+[Mon Apr 18 17:35:14 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",b.harga) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b)
+    -> group by m.nama;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+| APPLE     | Rp. 21000000    |
+| ASUS      | Rp. 35000000    |
+| NVIDIA    | Rp. 14890000    |
+| SAMSUNG   | Rp. 18500000    |
++-----------+-----------------+
+4 rows in set (0.001 sec)
+
+[Mon Apr 18 17:39:17 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",avg(b.harga)) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b)
+    -> group by m.nama;
++-----------+-------------------+
+| Nama Merk | Harga Rata-rata   |
++-----------+-------------------+
+| APPLE     | Rp. 24333333.3333 |
+| ASUS      | Rp. 25500000.0000 |
+| NVIDIA    | Rp. 20855000.0000 |
+| SAMSUNG   | Rp. 20100000.0000 |
++-----------+-------------------+
+4 rows in set (0.000 sec)
+
+[Mon Apr 18 17:41:25 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",ceil(avg(b.harga)) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b)
+    -> group by m.nama;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from merk m
+inner join barang b on m.id = b.id_merk
+where b.harga>
+(select av...' at line 2
+[Mon Apr 18 17:41:38 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",ceil(avg(b.harga))) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b)
+    -> group by m.nama;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+| APPLE     | Rp. 24333334    |
+| ASUS      | Rp. 25500000    |
+| NVIDIA    | Rp. 20855000    |
+| SAMSUNG   | Rp. 20100000    |
++-----------+-----------------+
+4 rows in set (0.000 sec)
+
+[Mon Apr 18 17:41:50 2022] 221116955Select m.nama as "Nama Merk", CONCAT("Rp. ",floor(avg(b.harga))) as "Harga Rata-rata"
+    -> from merk m
+    -> inner join barang b on m.id = b.id_merk
+    -> where b.harga>
+    -> (select avg(b.harga)
+    -> from barang b)
+    -> group by m.nama;
++-----------+-----------------+
+| Nama Merk | Harga Rata-rata |
++-----------+-----------------+
+| APPLE     | Rp. 24333333    |
+| ASUS      | Rp. 25500000    |
+| NVIDIA    | Rp. 20855000    |
+| SAMSUNG   | Rp. 20100000    |
++-----------+-----------------+
+4 rows in set (0.000 sec)
+
+[Mon Apr 18 17:42:11 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id 
+    -> join kategori k on k.id=b.id_kategori
+    -> where b.qty<10 and b.nama like '%I%') nt;
++--------------------------+----------+-----------+
+| Nama Barang              | Merk     | Kategori  |
++--------------------------+----------+-----------+
+| SONY XPERIA XZ1          | SONY     | HANDPHONE |
+| SONY XPERIA XZ2          | SONY     | HANDPHONE |
+| LOGITECH G PRO X         | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295          | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 64GB | SANDDISK | FLASHDISK |
+| GeForce RTX 3060 Ti      | NVIDIA   | VGA       |
++--------------------------+----------+-----------+
+6 rows in set (0.000 sec)
+
+[Mon Apr 18 17:42:36 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id 
+    -> join kategori k on k.id=b.id_kategori
+    -> having b.nama like '%I%') nt, barang b
+    -> where b.qty<10;
++---------------------------+----------+-----------+
+| Nama Barang               | Merk     | Kategori  |
++---------------------------+----------+-----------+
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
+| IPHONE 13                 | APPLE    | HANDPHONE |
+| IPHONE 13 PRO             | APPLE    | HANDPHONE |
+| IPHONE 13 PRO MAX         | APPLE    | HANDPHONE |
+| OPPO FIND X3 PRO          | OPPO     | HANDPHONE |
+| VIVO X70                  | VIVO     | HANDPHONE |
+| VIVO V21 5G               | VIVO     | HANDPHONE |
+| SONY XPERIA XZ1           | SONY     | HANDPHONE |
+| SONY XPERIA XZ2           | SONY     | HANDPHONE |
+| LOGITECH G703             | LOGITECH | MOUSE     |
+| LOGITECH G102             | LOGITECH | MOUSE     |
+| LOGITECH G PRO X          | LOGITECH | KEYBOARD  |
+| LOGITECH MK 295           | LOGITECH | KEYBOARD  |
+| SanDisk Flash Drive 16GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 32GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 64GB  | SANDDISK | FLASHDISK |
+| SanDisk Flash Drive 128GB | SANDDISK | FLASHDISK |
+| GeForce GTX 1650 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 2080 Ti       | NVIDIA   | VGA       |
+| GeForce RTX 3060 Ti       | NVIDIA   | VGA       |
++---------------------------+----------+-----------+
+266 rows in set (0.001 sec)
+
+[Mon Apr 18 17:43:08 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id 
+    -> join kategori k on k.id=b.id_kategori
+    -> having b.nama like '%I%') nt, barang b
+    -> where b.qty<10
+    -> group by b.id_merk;
++-------------+-------+-----------+
+| Nama Barang | Merk  | Kategori  |
++-------------+-------+-----------+
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
++-------------+-------+-----------+
+6 rows in set (0.001 sec)
+
+[Mon Apr 18 17:43:44 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id 
+    -> join kategori k on k.id=b.id_kategori
+    -> having b.nama like '%I%') nt, barang b
+    -> where b.qty<10
+    -> group by b.nama;
++-------------+-------+-----------+
+| Nama Barang | Merk  | Kategori  |
++-------------+-------+-----------+
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
++-------------+-------+-----------+
+14 rows in set (0.001 sec)
+
+[Mon Apr 18 17:45:48 2022] 221116955Select nt.nama as "Nama Barang", nt.merk as "Merk", nt.kategori as "Kategori"
+    -> from(
+    -> select b.nama as "nama", m.nama as "merk", k.nama as "kategori"
+    -> from barang b
+    -> join merk m on b.id_merk=m.id and b.nama like "%I%"
+    -> join kategori k on k.id=b.id_kategori
+    -> ) nt, barang b
+    -> where b.qty<10
+    -> group by b.nama;
++-------------+-------+-----------+
+| Nama Barang | Merk  | Kategori  |
++-------------+-------+-----------+
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
+| IPHONE 13   | APPLE | HANDPHONE |
++-------------+-------+-----------+
+14 rows in set (0.001 sec)
+
+[Mon Apr 18 17:46:29 2022] 221116955notee

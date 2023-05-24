@@ -1,0 +1,89 @@
+--2
+
+select sq.nama as "Nama Karyawan",
+sq.gender as "Jenis Kelamin",
+sq.email as "Email Karyawan",
+m.nama as "Nama Manager",
+w.alamat as "Tempat kerja"
+from (
+	select k.nama as "nama", 
+	CONCAT(CASE	
+		WHEN k.gender = "P" THEN CONCAT("    Wanita   ")
+		ELSE CONCAT("     Pria    ")
+		END) as "gender",
+	CONCAT(CASE
+		when k.email LIKE "%HOTMAIL%" then
+			CONCAT(" [HOTMAIL] ",k.email)
+		when k.email LIKE "%YAHOO%" then 
+			CONCAT (" [ YAHOO ] ",k.email)
+		when k.email LIKE "%GMAIL%" then
+			CONCAT(" [ GMAIL ] ",k.email)
+	END) as "email",
+	k.id as "id",
+	k.id_manager as "managerID",
+	k.tempat_kerja as "nguli",
+	k.status as "stat" from karyawan k) sq
+	left join manager m
+	on sq.managerID=m.id
+	left join warehouse w
+	on w.id=sq.nguli
+	where sq.stat=1
+	order by LENGTH(sq.nama), sq.nama;
+		
+
+--3
+Select kabeh.nama as "Nama" , 
+CONCAT(TIMESTAMPDIFF(YEAR,kabeh.tgllahir,CURDATE())," tahun")as "Umur",
+CONCAT(CASE
+	WHEN kabeh.tipe="Manager" then 
+		CONCAT("Manager")
+	when kabeh.tipe="Karyawan" then
+		CONCAT("Karyawan")
+	when kabeh.tipe="Supir" then
+		CONCAT("Supir")
+	end) as "Pekerjaan",
+CONCAT(CASE
+		WHEN kabeh.gender = "P" then
+			CONCAT("Wanita")
+		WHEN kabeh.gender = "L" then
+			CONCAT("Pria")
+		END) as "Jenis Kelamin",
+CONCAT(SUBSTR(kabeh.telp,1,3),"-",SUBSTR(kabeh.telp,4,3),"-", substr(kabeh.telp,7,4)) as "No. Telp"
+from (
+Select k.nama as "nama", k.tanggal_lahir as "tgllahir", "Karyawan" as "tipe", k.gender as "gender", k.telp as "telp" from karyawan k
+where k.status=1
+UNION
+Select m.nama, m.tanggal_lahir as "tgllahir", "Manager" as "tipe", m.gender as "gender", m.telp as "telp" from manager m
+where m.status=1
+UNION
+Select s.nama, s.tanggal_lahir as "tgllahir", "Supir" as "tipe", s.gender as "gender", s.telp as "telp" from supir s
+where s.status=1
+) kabeh
+group by kabeh.nama
+order by SUBSTR(kabeh.tipe,2), kabeh.tipe asc, kabeh.nama asc;
+
+--4
+select RPAD(k.nama,sq.maximum,"*") as "Nama Karyawan",
+CONCAT(DAYNAME(k.tanggal_lahir),", ",DAY(k.tanggal_lahir),"-",MONTH(k.tanggal_lahir),"-",DATE_FORMAT(k.tanggal_lahir, '%y')) as "Tanggal Lahir",
+CONCAT(CASE
+	when k.status=1 then
+		CONCAT("    [Aktif]    ")
+	when k.status=0 then
+		CONCAT("  [Non-Aktif]   ")
+	end) as "Status Karyawan"
+from (
+	select MAX(LENGTH(k.nama)) as "maximum" from karyawan k
+	) sq, karyawan k
+left join h_pindah hp on hp.id_karyawan=k.id
+where hp.id_karyawan is null;
+
+
+--5
+select fu.nama as "Nama Supplier", count(fu.kalisupply) as "Jumlah Supply"
+from
+(SELECT s.nama as "nama", hs.id_supplier as "kalisupply"
+from supplier s
+inner join h_supply hs on s.id = hs.id_supplier) fu
+group by fu.nama
+having count(kalisupply)>1
+order by SUBSTR(fu.nama,4) desc;r
