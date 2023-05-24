@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Garden</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="jquery-3.6.1.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container" style="background-color: #5cb03e;">
+			<div class="header">
+				<div class="Gold">
+					<p class="goldtext" id="goldtext">Gold : 0G</p>
+				</div>
+				<div class="titleBox">
+					<p class="titleLabel">My Garden</p>
+				</div>
+			</div>
+			<div class="game">
+				<div class="leftMenu">
+					<div class="actionMenu">
+						<div class="actionLabelBox">
+							<p class="actionLabel">Actions</p>
+						</div>
+						<div class="actionTool">
+							<button class="actionbutton" id="planttool">
+								<div class="buttonbox">
+									<img class="btnimage" src="assets/ic_.png" alt="Plant" />
+									<div class="buttonlabel" style=>
+										<p class="toollabel">Plant</p>
+									</div>
+								</div>
+							</button>
+							<button class="actionbutton" id="waterTool" >
+								<div class="buttonbox">
+									<img class="btnimage" src="assets/ic_water.png" alt="Water" />
+									<div class="buttonlabel" style=>
+										<p class="toollabel">Water</p>
+									</div>
+								</div>
+							</button>
+							<button class="actionbutton" id="harvestTool">
+								<div class="buttonbox">
+									<img class="btnimage" src="assets/ic_harvest.png" alt="Harvest" />
+									<div class="buttonlabel" style=>
+										<p class="toollabel">Harvest</p>
+									</div>
+								</div>
+							</button>
+						</div>
+					</div>
+					<button class="buttonnextday" id="buttonnextday">Next Day</button>
+				</div>
+				<div class="lahan" id="lahan"></div>
+				<div class="rightmenu">
+					<div class="menuinventory" id="inventoryMenu">
+						<div class="headermenu">
+							<div class="rightmenulabel">
+								<p class="actionLabel">Inventory</p>
+							</div>
+							<button class="buttonexpand" id="openInventory"><span>+</span></button>
+						</div>
+						<div style="height: max-content;">
+							<div class="Inventbody" id="Inventbody"></div>
+						</div>
+					</div>
+					<div class="rMenuShop" id="shopMenu">
+						<div class="headermenu">
+							<div class="rightmenulabel">
+								<p class="actionLabel">Shop</p>
+							</div>
+							<button class="buttonexpand" id="openShop"><span>+</span></button>
+						</div>
+						<div class="shopBawah">
+							<div class="bodyShop" id="bodyShop"></div>
+							<div class="priceBox" id="priceBox">
+								<p class="priceLabel" id="priceLabel">Price:</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var currentTool = null;
+		function resetAction(x) {
+			if (x == "plant") {
+				$("#waterTool").css("text-decoration", "none");
+				water = false;
+				$("#harvestTool").css("text-decoration", "none");
+				harvest = false;
+			}
+			if (x == "water") {
+				$("#plantTool").css("text-decoration", "none");
+				plant = false;
+				$("#harvestTool").css("text-decoration", "none");
+				harvest = false;
+			}
+			if (x == "harvest") {
+				$("#plantTool").css("text-decoration", "none");
+				plant = false;
+				$("#waterTool").css("text-decoration", "none");
+				water = false;
+			}
+		}
+		var inventoryOpen = false;
+		if (inventoryOpen == false) {
+			$("#Inventbody").slideToggle();
+			$("#openInventory span").text("+");
+			inventoryOpen = true;
+		} else {
+			$("#Inventbody").slideToggle();
+			$("#openInventory span").text("-");
+			inventoryOpen = false;
+		}
+	
+		$("#openInventory").click(function () {
+			if (inventoryOpen == false) {
+				$("#Inventbody").slideToggle();
+				$("#openInventory span").text("+");
+				inventoryOpen = true;
+			} else {
+				$("#Inventbody").slideToggle();
+				$("#openInventory span").text("-");
+				inventoryOpen = false;
+			}
+		});
+	
+		var shopOpen = false;
+		if (shopOpen == false) {
+			$("#bodyShop").slideToggle();
+			$("#priceBox").slideToggle();
+			$("#openShop span").text("+");
+			shopOpen = true;
+		} else {
+			$("#bodyShop").slideToggle();
+			$("#priceBox").slideToggle();
+			$("#openshop span").text("-");
+			shopOpen = false;
+		}
+	
+		$("#openShop").click(function () {
+			if (shopOpen == false) {
+				$("#bodyShop").slideToggle();
+				$("#priceBox").slideToggle();
+				$("#openShop span").text("+");
+				shopOpen = true;
+			} else {
+				$("#bodyShop").slideToggle();
+				$("#priceBox").slideToggle();
+				$("#openShop span").text("-");
+				shopOpen = false;
+			}
+		});
+	</script>
+</html>

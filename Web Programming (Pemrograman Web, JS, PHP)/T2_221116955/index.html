@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="">
+    <div class="container">
+        <div class="left">
+            <div class="leftatas">
+                <div class="nama" onclick="cheat()">Pizza Delivery</div>
+            </div>
+            <div class="leftbawah" id="bawahanbang">
+                <div class="map">
+                    <img src="assets/map.png" alt="map.png" class="map" id="map">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="cash">
+                <div class="label">Cash : $</div>
+                <div class="nominal" id="nominal">0</div>
+            </div>
+            <div class="active">
+                Active
+            </div>
+            <div class="pizzaDiv">
+                <div class="pizzaImg" id="activeImg">
+                    
+                </div>
+            </div>
+            <div class="upgrades">
+                Upgrades
+            </div>
+            <br>
+            <br>
+            <div class="upgrade">
+                <div class="tb">
+                    <div class="tbkiri">
+                        Mushroom Pizza
+                        <div class="money" id="money1">
+                            $10
+                        </div>
+                        <div class="progressBar" >
+                            <div class="yellowprog" id="mushProg"></div>
+                        </div>
+                    </div>
+                    <div class="tbkanan">
+                        <button class="plusbutton" id="plusbutton1" onclick="upgradeMushroom()">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="upgrade">
+                <div class="tb">
+                    <div class="tbkiri">
+                        Pepperoni Pizza
+                        <div class="money" id="money2">
+                            $10
+                        </div>
+                        <div class="progressBar" >
+                            <div class="yellowprog" id="peppProg"></div>
+                        </div>
+                    </div>
+                    <div class="tbkanan">
+                        <button class="plusbutton" id="plusbutton2" onclick="upgradePepperoni()">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="makecontainer">
+                <div class="bagi2">
+                    <button class="makeBtn olive" id="makeMushBtn" onclick="makeMushroom()">Make Mushroom</button>
+                </div>
+                <div class="bagi2">
+                    <button class="makeBtn red" id="makePepperoni" onclick="makePepperoni()">Make Pepperoni</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

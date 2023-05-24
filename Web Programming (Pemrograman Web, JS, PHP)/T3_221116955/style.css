@@ -1,0 +1,303 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header {
+	width: 95%;
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.Gold {
+	width: 20%;
+	height: 90%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.goldtext {
+	color: white;
+	font-size: 2em;
+}
+
+.titleBox {
+	width: 60%;
+	height: 90%;
+	display: flex;
+	margin-right: 20%;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleLabel {
+	color: #ffe500;
+	font-size: 3.5em;
+}
+
+.game {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+	height: 90%;
+	margin-top: 10px;
+}
+
+.leftMenu {
+	width: 27%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.actionMenu {
+	width: 80%;
+	background-color: #e9a906;
+	height: 65%;
+	border-radius: 10px;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.actionLabelBox {
+	margin-top: 20px;
+	width: 90%;
+	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.actionLabel {
+	color: black;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.actionTool {
+	margin-top: 20px;
+	width: 90%;
+	height: 80%;
+}
+
+.actionbutton {
+	width: 90%;
+	height: 30%;
+	background: transparent;
+	border: none;
+}
+
+.buttonbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btnimage {
+	width: 25%;
+	height: 25%;
+}
+
+.buttonlabel {
+	width: 50%;
+	height: 100%;
+	margin-left: 20px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.toollabel {
+	color: black;
+	font-size: 2.5em;
+}
+
+.buttonnextday {
+	width: 80%;
+	background-color: #f30a0a;
+	height: 10%;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 1.75em;
+	margin-top: 20px;
+}
+
+.lahan {
+	width: 46%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.rowPanel {
+	width: 65%;
+	height: 130px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.Gridlahan {
+	width: 130px;
+	height: 130px;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 10px;
+}
+
+.rightmenu {
+	width: 27%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.headermenu {
+	width: 100%;
+	height: 20%;
+	display: flex;
+	margin-top: 25px;
+}
+
+.rightmenulabel {
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 25px;
+}
+
+.buttonexpand {
+	width: 20%;
+	height: 100%;
+	background: transparent;
+	border: none;
+}
+
+.btnExpand span {
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+.menuinventory {
+	width: 90%;
+	height: auto;
+	display: flex;
+	background-color: #e9a906;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	border-radius: 10px;
+}
+
+.Inventbody {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.rowInventory {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 10px 30px;
+}
+
+.inventoryGrid {
+	width: 120px;
+	height: 120px;
+	border: none;
+	border-radius: 10px;
+}
+
+.rMenuShop {
+	width: 90%;
+	height: auto;
+	display: flex;
+	background-color: #e9a906;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+
+.shopBawah {
+	height: max-content;
+}
+
+.bodyShop {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.rowShop {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 10px 30px;
+}
+
+.shopGrid {
+	width: 120px;
+	height: 120px;
+	border: none;
+	border-radius: 10px;
+}
+
+.priceBox {
+	margin-bottom: 20px;
+}
+
+.priceLabel {
+	color: black;
+	font-size: 1.75em;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+.temp {
+	background-image: url(assets/persik.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+}
