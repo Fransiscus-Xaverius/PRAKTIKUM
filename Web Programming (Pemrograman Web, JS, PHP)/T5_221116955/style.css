@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+    background: seashell;
+    overflow: hidden;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 450px;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.center h1{
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.center form .textfield{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.center input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.textfield label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.textfield span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2691D9;
+    transition: 0.5s;
+}
+
+.textfield input:focus ~ label,
+.textfield input:valid ~ label{
+    top: -5px;
+}
+
+.tombol{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.maincenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 650px;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.maintombol{
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+body form table{
+    margin-left: 20px;
+}
+body form .judul{
+    margin-left: 20px;
+}
+
+body table, th, td {
+    border: 1px solid;
+    text-align: center;
+}
+
+.kasusKekerasan{
+    background-color: yellow;
+    color: black;
+}
+
+.kasusRingan{
+    background-color: lightgreen;
+    color: black;
+}
+
+.kasusDarurat{
+    background-color: red;
+    color: white;
+}
+
+.metu{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+
+
