@@ -26,3 +26,17 @@ This is a collection of all of my assignments from various programming classes d
 <p>
   This repo is purely used for people who're just starting to learn how to program/is trying out a new programming language. It is NOT recommended that you use this as reference on how you should code. Instead, use this as a reference on how to do basic things on a certain language that is available here.
 </p>
+
+# FOR ISTTS STUDENTS
+## 1st SEMESTER
+<a href="https://github.com/Fransiscus-Xaverius/PRAKTIKUM/tree/main/Intro%20to%20Programming(C%2B%2B)">INTRO TO PROGRAMMING (ITP) (2021)</a>
+## 2nd SEMESTER
+<a href="https://github.com/Fransiscus-Xaverius/PRAKTIKUM/tree/main/Pemrograman%20Berbasis%20Objek%20(Object%20Oriented%20Programming%2C%20Java)">PEMROGRAMAN BERBASIS OBJECT (PBO) (2022)</a>
+<br>
+<a href="https://github.com/Fransiscus-Xaverius/PRAKTIKUM/tree/main/Basis%20Data%20(Database%20MySQL)">BASIS DATA (BASDAT) (2022)</a>
+## 3rd SEMESTER
+<a href="https://github.com/Fransiscus-Xaverius/PRAKTIKUM/tree/main/Pemrograman%20Aplikasi%20Desktop%20(C%23)">PEMROGRAMAN VISUAL/PEMROGRAMAN APLIKASI DESKTOP (PV/PAD) (2022)</a>
+<br>
+<a href="https://github.com/Fransiscus-Xaverius/PRAKTIKUM/tree/main/Web%20Programming%20(Pemrograman%20Web%2C%20JS%2C%20PHP)">PEMROGRAMAN WEB (PW) (2022)</a>
+## 4th SEMESTER
+<a href="https://github.com/Fransiscus-Xaverius/PRAKTIKUM/tree/main/Web%20Service%20(Express%20Node%20JS)">WEB SERVICE (WS) (2023)</a>
