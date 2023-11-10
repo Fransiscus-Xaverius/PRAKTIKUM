@@ -1,0 +1,14 @@
+.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.left > textarea {
+    flex: 1;
+}
+
+@media print{
+  #head{
+    display: none!important;
+  }
+}

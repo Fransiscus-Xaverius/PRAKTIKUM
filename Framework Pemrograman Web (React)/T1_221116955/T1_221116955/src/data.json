@@ -1,0 +1,542 @@
+[
+  {
+    "asal": {
+      "alias": "CGK",
+      "kota": "Jakarta",
+      "flag": "id",
+      "bandara": "Soekarno-Hatta International Airport"
+    },
+    "tujuan": {
+      "alias": "SIN",
+      "kota": "Singapore",
+      "flag": "sg",
+      "bandara": "Changi Airport"
+    },
+    "pesawat": {
+      "maskapai": "Singapore Airlines",
+      "model": "B747-400"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "21-12-2023",
+        "jam": "08:40"
+      },
+      "sampai": {
+        "tanggal": "21-12-2023",
+        "jam": "11:30"
+      },
+      "durasi": "01:50"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "JFK",
+      "kota": "New York City",
+      "flag": "us",
+      "bandara": "John F. Kennedy International Airport"
+    },
+    "tujuan": {
+      "alias": "LHR",
+      "kota": "London",
+      "flag": "gb",
+      "bandara": "Heathrow Airport"
+    },
+    "pesawat": {
+      "maskapai": "British Airways",
+      "model": "A380"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "15-11-2023",
+        "jam": "19:30"
+      },
+      "sampai": {
+        "tanggal": "16-11-2023",
+        "jam": "07:15"
+      },
+      "durasi": "07:45"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "LAX",
+      "kota": "Los Angeles",
+      "flag": "us",
+      "bandara": "Los Angeles International Airport"
+    },
+    "tujuan": {
+      "alias": "LAS",
+      "kota": "Las Vegas",
+      "flag": "us",
+      "bandara": "McCarran International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Southwest Airlines",
+      "model": "Boeing 737"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "28-12-2023",
+        "jam": "10:15"
+      },
+      "sampai": {
+        "tanggal": "28-12-2023",
+        "jam": "11:30"
+      },
+      "durasi": "01:15"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "CDG",
+      "kota": "Paris",
+      "flag": "fr",
+      "bandara": "Charles de Gaulle Airport"
+    },
+    "tujuan": {
+      "alias": "FRA",
+      "kota": "Frankfurt",
+      "flag": "de",
+      "bandara": "Frankfurt Airport"
+    },
+    "pesawat": {
+      "maskapai": "Lufthansa",
+      "model": "Airbus A320"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "04-01-2023",
+        "jam": "09:20"
+      },
+      "sampai": {
+        "tanggal": "04-01-2023",
+        "jam": "10:45"
+      },
+      "durasi": "01:25"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "HND",
+      "kota": "Tokyo",
+      "flag": "jp",
+      "bandara": "Haneda Airport"
+    },
+    "tujuan": {
+      "alias": "PEK",
+      "kota": "Beijing",
+      "flag": "cn",
+      "bandara": "Beijing Capital International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Air China",
+      "model": "Boeing 777"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "12-02-2023",
+        "jam": "14:15"
+      },
+      "sampai": {
+        "tanggal": "12-02-2023",
+        "jam": "16:45"
+      },
+      "durasi": "03:30"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "MIA",
+      "kota": "Miami",
+      "flag": "us",
+      "bandara": "Miami International Airport"
+    },
+    "tujuan": {
+      "alias": "ATL",
+      "kota": "Atlanta",
+      "flag": "us",
+      "bandara": "Hartsfield-Jackson Atlanta International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Delta Air Lines",
+      "model": "Boeing 737"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "19-03-2023",
+        "jam": "08:00"
+      },
+      "sampai": {
+        "tanggal": "19-03-2023",
+        "jam": "10:15"
+      },
+      "durasi": "02:15"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "SYD",
+      "kota": "Sydney",
+      "flag": "au",
+      "bandara": "Sydney Kingsford Smith Airport"
+    },
+    "tujuan": {
+      "alias": "AKL",
+      "kota": "Auckland",
+      "flag": "nz",
+      "bandara": "Auckland Airport"
+    },
+    "pesawat": {
+      "maskapai": "Air New Zealand",
+      "model": "Boeing 787"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "08-05-2023",
+        "jam": "16:30"
+      },
+      "sampai": {
+        "tanggal": "08-05-2023",
+        "jam": "21:45"
+      },
+      "durasi": "03:15"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "ORD",
+      "kota": "Chicago",
+      "flag": "us",
+      "bandara": "O'Hare International Airport"
+    },
+    "tujuan": {
+      "alias": "LAX",
+      "kota": "Los Angeles",
+      "flag": "us",
+      "bandara": "Los Angeles International Airport"
+    },
+    "pesawat": {
+      "maskapai": "American Airlines",
+      "model": "Airbus A321"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "10-07-2023",
+        "jam": "11:45"
+      },
+      "sampai": {
+        "tanggal": "10-07-2023",
+        "jam": "13:50"
+      },
+      "durasi": "04:05"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "ICN",
+      "kota": "Seoul",
+      "flag": "kr",
+      "bandara": "Incheon International Airport"
+    },
+    "tujuan": {
+      "alias": "HKG",
+      "kota": "Hong Kong",
+      "flag": "hk",
+      "bandara": "Hong Kong International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Cathay Pacific",
+      "model": "Boeing 777"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "29-09-2023",
+        "jam": "20:00"
+      },
+      "sampai": {
+        "tanggal": "29-09-2023",
+        "jam": "21:45"
+      },
+      "durasi": "02:45"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "DFW",
+      "kota": "Dallas",
+      "flag": "us",
+      "bandara": "Dallas/Fort Worth International Airport"
+    },
+    "tujuan": {
+      "alias": "MCO",
+      "kota": "Orlando",
+      "flag": "us",
+      "bandara": "Orlando International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Southwest Airlines",
+      "model": "Boeing 737"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "17-11-2023",
+        "jam": "13:30"
+      },
+      "sampai": {
+        "tanggal": "17-11-2023",
+        "jam": "16:45"
+      },
+      "durasi": "02:15"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "SYD",
+      "kota": "Sydney",
+      "flag": "au",
+      "bandara": "Sydney Kingsford Smith Airport"
+    },
+    "tujuan": {
+      "alias": "LAX",
+      "kota": "Los Angeles",
+      "flag": "us",
+      "bandara": "Los Angeles International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Qantas",
+      "model": "Airbus A380"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "06-04-2023",
+        "jam": "21:15"
+      },
+      "sampai": {
+        "tanggal": "06-04-2023",
+        "jam": "17:30"
+      },
+      "durasi": "13:15"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "ATL",
+      "kota": "Atlanta",
+      "flag": "us",
+      "bandara": "Hartsfield-Jackson Atlanta International Airport"
+    },
+    "tujuan": {
+      "alias": "MCO",
+      "kota": "Orlando",
+      "flag": "us",
+      "bandara": "Orlando International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Delta Air Lines",
+      "model": "Boeing 737"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "05-06-2023",
+        "jam": "09:00"
+      },
+      "sampai": {
+        "tanggal": "05-06-2023",
+        "jam": "11:15"
+      },
+      "durasi": "02:15"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "NRT",
+      "kota": "Tokyo",
+      "flag": "jp",
+      "bandara": "Narita International Airport"
+    },
+    "tujuan": {
+      "alias": "LHR",
+      "kota": "London",
+      "flag": "gb",
+      "bandara": "Heathrow Airport"
+    },
+    "pesawat": {
+      "maskapai": "Japan Airlines",
+      "model": "Boeing 777"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "13-08-2023",
+        "jam": "17:00"
+      },
+      "sampai": {
+        "tanggal": "14-08-2023",
+        "jam": "06:30"
+      },
+      "durasi": "11:30"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "SFO",
+      "kota": "San Francisco",
+      "flag": "us",
+      "bandara": "San Francisco International Airport"
+    },
+    "tujuan": {
+      "alias": "DEN",
+      "kota": "Denver",
+      "flag": "us",
+      "bandara": "Denver International Airport"
+    },
+    "pesawat": {
+      "maskapai": "United Airlines",
+      "model": "Boeing 737"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "22-09-2023",
+        "jam": "14:45"
+      },
+      "sampai": {
+        "tanggal": "22-09-2023",
+        "jam": "17:30"
+      },
+      "durasi": "02:45"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "HKG",
+      "kota": "Hong Kong",
+      "flag": "hk",
+      "bandara": "Hong Kong International Airport"
+    },
+    "tujuan": {
+      "alias": "TPE",
+      "kota": "Taipei",
+      "flag": "tw",
+      "bandara": "Taiwan Taoyuan International Airport"
+    },
+    "pesawat": {
+      "maskapai": "Cathay Dragon",
+      "model": "Airbus A330"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "07-03-2023",
+        "jam": "10:30"
+      },
+      "sampai": {
+        "tanggal": "07-03-2023",
+        "jam": "12:15"
+      },
+      "durasi": "01:45"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "MCO",
+      "kota": "Orlando",
+      "flag": "us",
+      "bandara": "Orlando International Airport"
+    },
+    "tujuan": {
+      "alias": "LGA",
+      "kota": "New York City",
+      "flag": "us",
+      "bandara": "LaGuardia Airport"
+    },
+    "pesawat": {
+      "maskapai": "JetBlue Airways",
+      "model": "Airbus A321"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "18-06-2023",
+        "jam": "08:15"
+      },
+      "sampai": {
+        "tanggal": "18-06-2023",
+        "jam": "10:45"
+      },
+      "durasi": "02:30"
+    },
+    "jenis": "domestik"
+  },
+  {
+    "asal": {
+      "alias": "BKK",
+      "kota": "Bangkok",
+      "flag": "th",
+      "bandara": "Suvarnabhumi Airport"
+    },
+    "tujuan": {
+      "alias": "SIN",
+      "kota": "Singapore",
+      "flag": "sg",
+      "bandara": "Changi Airport"
+    },
+    "pesawat": {
+      "maskapai": "Thai Airways",
+      "model": "Boeing 777"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "24-04-2023",
+        "jam": "13:20"
+      },
+      "sampai": {
+        "tanggal": "24-04-2023",
+        "jam": "15:45"
+      },
+      "durasi": "02:25"
+    },
+    "jenis": "internasional"
+  },
+  {
+    "asal": {
+      "alias": "AMS",
+      "kota": "Amsterdam",
+      "flag": "nl",
+      "bandara": "Amsterdam Airport Schiphol"
+    },
+    "tujuan": {
+      "alias": "JFK",
+      "kota": "New York City",
+      "flag": "us",
+      "bandara": "John F. Kennedy International Airport"
+    },
+    "pesawat": {
+      "maskapai": "KLM Royal Dutch Airlines",
+      "model": "Boeing 777"
+    },
+    "jadwal": {
+      "berangkat": {
+        "tanggal": "02-12-2023",
+        "jam": "17:45"
+      },
+      "sampai": {
+        "tanggal": "03-12-2023",
+        "jam": "06:30"
+      },
+      "durasi": "07:45"
+    },
+    "jenis": "internasional"
+  }
+]
