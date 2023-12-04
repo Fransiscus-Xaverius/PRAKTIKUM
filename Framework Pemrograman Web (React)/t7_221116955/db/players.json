@@ -1,0 +1,962 @@
+[
+  {
+    "_id": { "$oid": "699aec9097b50c99a09248e1" },
+    "name": "Dr. Victor Ritchie",
+    "age": 34,
+    "position": "Goalkeeper",
+    "nationality": "England",
+    "number": 32
+  },
+  {
+    "_id": { "$oid": "1a0ab50eb4b5651bc0d513c9" },
+    "name": "Jimmie Wilkinson",
+    "age": 31,
+    "position": "Defender",
+    "nationality": "England",
+    "number": 3
+  },
+  {
+    "_id": { "$oid": "74ff9fac920facb188232777" },
+    "name": "Jacob Thiel",
+    "age": 38,
+    "position": "Defender",
+    "nationality": "England",
+    "number": 59
+  },
+  {
+    "_id": { "$oid": "203e7b3e4f3ea5e0fdcd7959" },
+    "name": "William Stehr",
+    "age": 31,
+    "position": "Defender",
+    "nationality": "England",
+    "number": 42
+  },
+  {
+    "_id": { "$oid": "dc5656039d1dc293ac9e64e8" },
+    "name": "Marvin Jaskolski",
+    "age": 37,
+    "position": "Defender",
+    "nationality": "England",
+    "number": 40
+  },
+  {
+    "_id": { "$oid": "c0f884f94561f6d06faf1ab3" },
+    "name": "Albert Macejkovic",
+    "age": 36,
+    "position": "Defender",
+    "nationality": "England",
+    "number": 43
+  },
+  {
+    "_id": { "$oid": "cd7698b7099c483a81faf5e4" },
+    "name": "Harry Runte-Fisher",
+    "age": 30,
+    "position": "Midfielder",
+    "nationality": "England",
+    "number": 27
+  },
+  {
+    "_id": { "$oid": "afe0bed876948634050288e1" },
+    "name": "Armando Keeling",
+    "age": 36,
+    "position": "Midfielder",
+    "nationality": "England",
+    "number": 59
+  },
+  {
+    "_id": { "$oid": "9e10ff792fdc1f71dad88cfa" },
+    "name": "Dr. Ignacio Nitzsche",
+    "age": 36,
+    "position": "Midfielder",
+    "nationality": "England",
+    "number": 62
+  },
+  {
+    "_id": { "$oid": "f4966850c0959a04f4b129f8" },
+    "name": "Gregory Windler",
+    "age": 27,
+    "position": "Midfielder",
+    "nationality": "England",
+    "number": 10
+  },
+  {
+    "_id": { "$oid": "354b091c3cbaa93a4945c358" },
+    "name": "William Lebsack",
+    "age": 33,
+    "position": "Midfielder",
+    "nationality": "England",
+    "number": 3
+  },
+  {
+    "_id": { "$oid": "d1a895cd588b2fb7b8e2e0aa" },
+    "name": "Jonathon Bashirian",
+    "age": 35,
+    "position": "Midfielder",
+    "nationality": "England",
+    "number": 7
+  },
+  {
+    "_id": { "$oid": "d2deb989a6acca21692876d2" },
+    "name": "Israel Green",
+    "age": 26,
+    "position": "Forward",
+    "nationality": "England",
+    "number": 74
+  },
+  {
+    "_id": { "$oid": "741de8421f6fdb324a7ee9bd" },
+    "name": "Jody Kemmer-Kutch",
+    "age": 33,
+    "position": "Forward",
+    "nationality": "England",
+    "number": 25
+  },
+  {
+    "_id": { "$oid": "b8422b5960b8379ac68c67a5" },
+    "name": "Caleb Fay",
+    "age": 28,
+    "position": "Forward",
+    "nationality": "England",
+    "number": 13
+  },
+  {
+    "_id": { "$oid": "b54fbb8317a73ec84847c919" },
+    "name": "Prof. Dr. Yannic Abramovic",
+    "age": 35,
+    "position": "Goalkeeper",
+    "nationality": "Germany",
+    "number": 71
+  },
+  {
+    "_id": { "$oid": "cc11d06a19ea97979f3224c0" },
+    "name": "Laurin Golling",
+    "age": 27,
+    "position": "Defender",
+    "nationality": "Germany",
+    "number": 47
+  },
+  {
+    "_id": { "$oid": "d1982e0b5885b8a05c290624" },
+    "name": "Semih Kohle",
+    "age": 38,
+    "position": "Defender",
+    "nationality": "Germany",
+    "number": 34
+  },
+  {
+    "_id": { "$oid": "49753a8dee323e379f21341e" },
+    "name": "Sönke Hingsen",
+    "age": 39,
+    "position": "Defender",
+    "nationality": "Germany",
+    "number": 59
+  },
+  {
+    "_id": { "$oid": "753e96d906c4a91485b86e3f" },
+    "name": "Dr. Karlo Schwarzer",
+    "age": 28,
+    "position": "Defender",
+    "nationality": "Germany",
+    "number": 39
+  },
+  {
+    "_id": { "$oid": "67dda7ea42f212446acbae46" },
+    "name": "Prof. Dr. Michael Rohländer",
+    "age": 31,
+    "position": "Defender",
+    "nationality": "Germany",
+    "number": 47
+  },
+  {
+    "_id": { "$oid": "86c36140c98d334d2bbe4cdf" },
+    "name": "Oskar Köhler",
+    "age": 25,
+    "position": "Midfielder",
+    "nationality": "Germany",
+    "number": 72
+  },
+  {
+    "_id": { "$oid": "da9e8df38a5d10ba55e6018b" },
+    "name": "Tommy Heidelmann",
+    "age": 26,
+    "position": "Midfielder",
+    "nationality": "Germany",
+    "number": 41
+  },
+  {
+    "_id": { "$oid": "8bd7df3e0898fbe5410e290b" },
+    "name": "Dr. Danny Assmus",
+    "age": 35,
+    "position": "Midfielder",
+    "nationality": "Germany",
+    "number": 56
+  },
+  {
+    "_id": { "$oid": "3609ee48e72a05b43308be43" },
+    "name": "Brandon Riepl",
+    "age": 33,
+    "position": "Midfielder",
+    "nationality": "Germany",
+    "number": 76
+  },
+  {
+    "_id": { "$oid": "7a893a70e7d0427b78c7663e" },
+    "name": "Herr Ron Nodler",
+    "age": 25,
+    "position": "Midfielder",
+    "nationality": "Germany",
+    "number": 8
+  },
+  {
+    "_id": { "$oid": "4edb41e50b1511dac806aff9" },
+    "name": "Tiago Mikitenko",
+    "age": 30,
+    "position": "Midfielder",
+    "nationality": "Germany",
+    "number": 18
+  },
+  {
+    "_id": { "$oid": "d62eaed6a2e06dd36165cebc" },
+    "name": "Til Kunz",
+    "age": 31,
+    "position": "Forward",
+    "nationality": "Germany",
+    "number": 40
+  },
+  {
+    "_id": { "$oid": "f6fafd8a70fa0ca92c5f6f85" },
+    "name": "Nils Stief",
+    "age": 35,
+    "position": "Forward",
+    "nationality": "Germany",
+    "number": 17
+  },
+  {
+    "_id": { "$oid": "33aa93b5cbc6f40ff05db227" },
+    "name": "Giuliano Schwarzkopf",
+    "age": 39,
+    "position": "Forward",
+    "nationality": "Germany",
+    "number": 51
+  },
+  {
+    "_id": { "$oid": "01ae837642d3ffd7c721c55b" },
+    "name": "Hermenegildo Soliz Cabrera",
+    "age": 38,
+    "position": "Goalkeeper",
+    "nationality": "Spain",
+    "number": 15
+  },
+  {
+    "_id": { "$oid": "121b0f6d1d2d6329532f6c02" },
+    "name": "Jorge Chavarría Garica",
+    "age": 40,
+    "position": "Defender",
+    "nationality": "Spain",
+    "number": 66
+  },
+  {
+    "_id": { "$oid": "891e75d8abcb0df624936218" },
+    "name": "Iván Casares Gurule",
+    "age": 28,
+    "position": "Defender",
+    "nationality": "Spain",
+    "number": 52
+  },
+  {
+    "_id": { "$oid": "7e108f121bd065abfeaeb209" },
+    "name": "Ricardo Ornelas Romo",
+    "age": 25,
+    "position": "Defender",
+    "nationality": "Spain",
+    "number": 30
+  },
+  {
+    "_id": { "$oid": "8f0a4c47fd06f5e1b63a002e" },
+    "name": "Pedro Casares Jiménez",
+    "age": 31,
+    "position": "Defender",
+    "nationality": "Spain",
+    "number": 29
+  },
+  {
+    "_id": { "$oid": "f8fd0b6a06a6bc89954170c9" },
+    "name": "Sergi Maestas Pacheco",
+    "age": 37,
+    "position": "Defender",
+    "nationality": "Spain",
+    "number": 16
+  },
+  {
+    "_id": { "$oid": "8ec1b924ace3e13613d0bb6a" },
+    "name": "Josep Saldivar Avilés",
+    "age": 38,
+    "position": "Midfielder",
+    "nationality": "Spain",
+    "number": 44
+  },
+  {
+    "_id": { "$oid": "f8a7e14f01a601817b768f29" },
+    "name": "Iván Amador Velásquez",
+    "age": 26,
+    "position": "Midfielder",
+    "nationality": "Spain",
+    "number": 44
+  },
+  {
+    "_id": { "$oid": "00b23f0346b8346895bc0fc8" },
+    "name": "Juan Ramón Casillas Campos",
+    "age": 29,
+    "position": "Midfielder",
+    "nationality": "Spain",
+    "number": 71
+  },
+  {
+    "_id": { "$oid": "6f796ae312315e904e2cbd6e" },
+    "name": "Iván Casanova Cisneros",
+    "age": 26,
+    "position": "Midfielder",
+    "nationality": "Spain",
+    "number": 43
+  },
+  {
+    "_id": { "$oid": "27d8904cbf072a31dd9ce894" },
+    "name": "Jordi Gómez Sierra",
+    "age": 32,
+    "position": "Midfielder",
+    "nationality": "Spain",
+    "number": 10
+  },
+  {
+    "_id": { "$oid": "9417af198055a1b295320c26" },
+    "name": "Miguel Covarrubias Mondragón",
+    "age": 38,
+    "position": "Midfielder",
+    "nationality": "Spain",
+    "number": 13
+  },
+  {
+    "_id": { "$oid": "129305c371c64a5d82509f9c" },
+    "name": "Carles Cruz Madrigal",
+    "age": 31,
+    "position": "Forward",
+    "nationality": "Spain",
+    "number": 69
+  },
+  {
+    "_id": { "$oid": "b53a0ec2155de9aa37f2def0" },
+    "name": "Hermenegildo Madera Escamilla",
+    "age": 36,
+    "position": "Forward",
+    "nationality": "Spain",
+    "number": 10
+  },
+  {
+    "_id": { "$oid": "14832d9338234f52ff7063d6" },
+    "name": "Jordi Villaseñor Girón",
+    "age": 35,
+    "position": "Forward",
+    "nationality": "Spain",
+    "number": 71
+  },
+  {
+    "_id": { "$oid": "3a6ef94f9e119ae4cb5c66bd" },
+    "name": "Tanguy Arnaud",
+    "age": 37,
+    "position": "Goalkeeper",
+    "nationality": "France",
+    "number": 79
+  },
+  {
+    "_id": { "$oid": "98155e1b52c73da8bbaaf004" },
+    "name": "Tancrède Aubry",
+    "age": 30,
+    "position": "Defender",
+    "nationality": "France",
+    "number": 49
+  },
+  {
+    "_id": { "$oid": "b1068262cfa35a8a99122ade" },
+    "name": "Aubry Rousseau",
+    "age": 32,
+    "position": "Defender",
+    "nationality": "France",
+    "number": 81
+  },
+  {
+    "_id": { "$oid": "77a7841419d39e1e89cb3347" },
+    "name": "Boniface Benoit",
+    "age": 31,
+    "position": "Defender",
+    "nationality": "France",
+    "number": 34
+  },
+  {
+    "_id": { "$oid": "9b3dc15303aabbb226139e13" },
+    "name": "Paul Fontaine",
+    "age": 38,
+    "position": "Defender",
+    "nationality": "France",
+    "number": 82
+  },
+  {
+    "_id": { "$oid": "626b2891e3d8d9d27447243a" },
+    "name": "Taurin Dupuis",
+    "age": 38,
+    "position": "Defender",
+    "nationality": "France",
+    "number": 83
+  },
+  {
+    "_id": { "$oid": "78c665531f6a9cc475d184e0" },
+    "name": "Dr Yoann Michel",
+    "age": 35,
+    "position": "Midfielder",
+    "nationality": "France",
+    "number": 83
+  },
+  {
+    "_id": { "$oid": "24fc162d27ce84fe9c591f1c" },
+    "name": "Aimable Paris",
+    "age": 25,
+    "position": "Midfielder",
+    "nationality": "France",
+    "number": 44
+  },
+  {
+    "_id": { "$oid": "5fc3ad392c8b4f76697e96ce" },
+    "name": "Flavien Roger",
+    "age": 35,
+    "position": "Midfielder",
+    "nationality": "France",
+    "number": 67
+  },
+  {
+    "_id": { "$oid": "b5cebcf5363d11147d68d5a2" },
+    "name": "Emmanuel Le roux",
+    "age": 25,
+    "position": "Midfielder",
+    "nationality": "France",
+    "number": 72
+  },
+  {
+    "_id": { "$oid": "d8e411f90d15734372979b07" },
+    "name": "Thierry Guerin",
+    "age": 40,
+    "position": "Midfielder",
+    "nationality": "France",
+    "number": 12
+  },
+  {
+    "_id": { "$oid": "347ed68ba0984ed804445868" },
+    "name": "Chrétien Bernard",
+    "age": 39,
+    "position": "Midfielder",
+    "nationality": "France",
+    "number": 67
+  },
+  {
+    "_id": { "$oid": "00b7320317baf1d1998bec94" },
+    "name": "Guyot Robert",
+    "age": 34,
+    "position": "Forward",
+    "nationality": "France",
+    "number": 56
+  },
+  {
+    "_id": { "$oid": "785740d472bd9a7d7093b32b" },
+    "name": "Gabin Maillard",
+    "age": 29,
+    "position": "Forward",
+    "nationality": "France",
+    "number": 15
+  },
+  {
+    "_id": { "$oid": "738f31eccd3d11cae7497d44" },
+    "name": "Dr Ariel Julien",
+    "age": 39,
+    "position": "Forward",
+    "nationality": "France",
+    "number": 68
+  },
+  {
+    "_id": { "$oid": "77f49187944067bac2a09010" },
+    "name": "Grimaldo Longo",
+    "age": 29,
+    "position": "Goalkeeper",
+    "nationality": "Italy",
+    "number": 7
+  },
+  {
+    "_id": { "$oid": "a88e1d390d175d2fccae238c" },
+    "name": "Mauro Marinucci",
+    "age": 32,
+    "position": "Defender",
+    "nationality": "Italy",
+    "number": 62
+  },
+  {
+    "_id": { "$oid": "2cabd1f4af87f3edb606b926" },
+    "name": "Gillo Germani",
+    "age": 30,
+    "position": "Defender",
+    "nationality": "Italy",
+    "number": 16
+  },
+  {
+    "_id": { "$oid": "8a3b0c1acc22c827aa7bd371" },
+    "name": "Ing. Nicolò Martellucci",
+    "age": 36,
+    "position": "Defender",
+    "nationality": "Italy",
+    "number": 59
+  },
+  {
+    "_id": { "$oid": "d4cac9784616fa84141caeec" },
+    "name": "Maffeo Minelli",
+    "age": 25,
+    "position": "Defender",
+    "nationality": "Italy",
+    "number": 31
+  },
+  {
+    "_id": { "$oid": "ffae41e2796493869c4ba03b" },
+    "name": "Benvenuto Nieddu",
+    "age": 33,
+    "position": "Defender",
+    "nationality": "Italy",
+    "number": 64
+  },
+  {
+    "_id": { "$oid": "1eebbbb7512f76c5a5341bc5" },
+    "name": "Benito De Feo",
+    "age": 30,
+    "position": "Midfielder",
+    "nationality": "Italy",
+    "number": 33
+  },
+  {
+    "_id": { "$oid": "d42fab9df3baba7b971cbcf7" },
+    "name": "Adriano Fava",
+    "age": 26,
+    "position": "Midfielder",
+    "nationality": "Italy",
+    "number": 40
+  },
+  {
+    "_id": { "$oid": "bb4296abb3bd9d5ae869d935" },
+    "name": "Pantaleone Paoletti",
+    "age": 29,
+    "position": "Midfielder",
+    "nationality": "Italy",
+    "number": 69
+  },
+  {
+    "_id": { "$oid": "9884f57388075c80c7cb84d6" },
+    "name": "Everardo Sassano",
+    "age": 31,
+    "position": "Midfielder",
+    "nationality": "Italy",
+    "number": 9
+  },
+  {
+    "_id": { "$oid": "71cac1287b81bd3777788cb1" },
+    "name": "Sig. Venanzio Sepe",
+    "age": 32,
+    "position": "Midfielder",
+    "nationality": "Italy",
+    "number": 83
+  },
+  {
+    "_id": { "$oid": "fc17d19519454c8f610b80b6" },
+    "name": "Erenia Chiavacci",
+    "age": 31,
+    "position": "Midfielder",
+    "nationality": "Italy",
+    "number": 32
+  },
+  {
+    "_id": { "$oid": "0498350a42aed10133f94fa0" },
+    "name": "Cassio Turco",
+    "age": 29,
+    "position": "Forward",
+    "nationality": "Italy",
+    "number": 48
+  },
+  {
+    "_id": { "$oid": "98b45b4766afa0aa1c085914" },
+    "name": "Argimiro Caforio",
+    "age": 35,
+    "position": "Forward",
+    "nationality": "Italy",
+    "number": 62
+  },
+  {
+    "_id": { "$oid": "0a907454eaccca9be8f25090" },
+    "name": "Enrico Renna",
+    "age": 29,
+    "position": "Forward",
+    "nationality": "Italy",
+    "number": 71
+  },
+  {
+    "_id": { "$oid": "3c24ebfd495d6eb5129e88f0" },
+    "name": "Larry Feeney",
+    "age": 26,
+    "position": "Goalkeeper",
+    "nationality": "Canada",
+    "number": 83
+  },
+  {
+    "_id": { "$oid": "7b5bdb836eaf1bc1bb207345" },
+    "name": "Clayton Welch",
+    "age": 40,
+    "position": "Defender",
+    "nationality": "Canada",
+    "number": 74
+  },
+  {
+    "_id": { "$oid": "318cc1698ed79dde56134995" },
+    "name": "Joshua Miller",
+    "age": 29,
+    "position": "Defender",
+    "nationality": "Canada",
+    "number": 80
+  },
+  {
+    "_id": { "$oid": "a0fc480b91d4aad9960ac1d1" },
+    "name": "Eduardo Kovacek",
+    "age": 26,
+    "position": "Defender",
+    "nationality": "Canada",
+    "number": 5
+  },
+  {
+    "_id": { "$oid": "9506bafa4ca7ee8215041349" },
+    "name": "Mitchell Larkin",
+    "age": 28,
+    "position": "Defender",
+    "nationality": "Canada",
+    "number": 17
+  },
+  {
+    "_id": { "$oid": "7baaf8868c44ffff0305a4fa" },
+    "name": "Nelson Grady",
+    "age": 34,
+    "position": "Defender",
+    "nationality": "Canada",
+    "number": 25
+  },
+  {
+    "_id": { "$oid": "785bcfc31bd755e2d6b024b1" },
+    "name": "Dr. Ray Zemlak",
+    "age": 35,
+    "position": "Midfielder",
+    "nationality": "Canada",
+    "number": 38
+  },
+  {
+    "_id": { "$oid": "b69465bc5f3a67a562750925" },
+    "name": "Joel Durgan",
+    "age": 40,
+    "position": "Midfielder",
+    "nationality": "Canada",
+    "number": 4
+  },
+  {
+    "_id": { "$oid": "bf51a0ebc8d58e39097872af" },
+    "name": "Justin Runte",
+    "age": 38,
+    "position": "Midfielder",
+    "nationality": "Canada",
+    "number": 43
+  },
+  {
+    "_id": { "$oid": "554e36cc263c82a7588886ce" },
+    "name": "Virgil Becker",
+    "age": 33,
+    "position": "Midfielder",
+    "nationality": "Canada",
+    "number": 8
+  },
+  {
+    "_id": { "$oid": "fdd8657fba2b6c2be167efdf" },
+    "name": "Rick Abshire",
+    "age": 33,
+    "position": "Midfielder",
+    "nationality": "Canada",
+    "number": 18
+  },
+  {
+    "_id": { "$oid": "bf3462bf50ab777f0100d673" },
+    "name": "Juan Franey",
+    "age": 40,
+    "position": "Midfielder",
+    "nationality": "Canada",
+    "number": 25
+  },
+  {
+    "_id": { "$oid": "ae40233547680999461b0426" },
+    "name": "Carroll Tromp",
+    "age": 33,
+    "position": "Forward",
+    "nationality": "Canada",
+    "number": 75
+  },
+  {
+    "_id": { "$oid": "9f50c52b5c91a163cb3dd965" },
+    "name": "Jason Quitzon",
+    "age": 32,
+    "position": "Forward",
+    "nationality": "Canada",
+    "number": 78
+  },
+  {
+    "_id": { "$oid": "345eeb9da665d659d70189af" },
+    "name": "Mr. Timmy Ward",
+    "age": 33,
+    "position": "Forward",
+    "nationality": "Canada",
+    "number": 64
+  },
+  {
+    "_id": { "$oid": "0a0e4509452d1c593bc547f7" },
+    "name": "César Leal",
+    "age": 37,
+    "position": "Goalkeeper",
+    "nationality": "Portugal",
+    "number": 8
+  },
+  {
+    "_id": { "$oid": "c3e9367f994e9e9f5f847a82" },
+    "name": "Marco Neto",
+    "age": 40,
+    "position": "Defender",
+    "nationality": "Portugal",
+    "number": 61
+  },
+  {
+    "_id": { "$oid": "6d9d1284d71354bdf61aaf3a" },
+    "name": "Valentim Freitas",
+    "age": 36,
+    "position": "Defender",
+    "nationality": "Portugal",
+    "number": 16
+  },
+  {
+    "_id": { "$oid": "52fb271b214f1e738ceba022" },
+    "name": "Leandro Correia",
+    "age": 27,
+    "position": "Defender",
+    "nationality": "Portugal",
+    "number": 62
+  },
+  {
+    "_id": { "$oid": "de2d73b76736f8409780bb8f" },
+    "name": "Martim Fonseca",
+    "age": 25,
+    "position": "Defender",
+    "nationality": "Portugal",
+    "number": 24
+  },
+  {
+    "_id": { "$oid": "24dadd91c78c1c5669d5dab8" },
+    "name": "Sérgio Domingues",
+    "age": 29,
+    "position": "Defender",
+    "nationality": "Portugal",
+    "number": 71
+  },
+  {
+    "_id": { "$oid": "528cbd09f02630f177349715" },
+    "name": "Rui Baptista",
+    "age": 38,
+    "position": "Midfielder",
+    "nationality": "Portugal",
+    "number": 16
+  },
+  {
+    "_id": { "$oid": "fda257122fae2248f7d04daf" },
+    "name": "Miguel Brito",
+    "age": 38,
+    "position": "Midfielder",
+    "nationality": "Portugal",
+    "number": 30
+  },
+  {
+    "_id": { "$oid": "2dd9f04626787b3a8e05256c" },
+    "name": "Hugo Marques",
+    "age": 36,
+    "position": "Midfielder",
+    "nationality": "Portugal",
+    "number": 40
+  },
+  {
+    "_id": { "$oid": "80be01b8554fffb79ead46e1" },
+    "name": "Afonso Andrade",
+    "age": 37,
+    "position": "Midfielder",
+    "nationality": "Portugal",
+    "number": 61
+  },
+  {
+    "_id": { "$oid": "737942dff8fd3fe53c9b40f4" },
+    "name": "Eng.º César Ferreira",
+    "age": 33,
+    "position": "Midfielder",
+    "nationality": "Portugal",
+    "number": 41
+  },
+  {
+    "_id": { "$oid": "2e72b3791b193d1a3ccc090a" },
+    "name": "Frederico Gaspar",
+    "age": 26,
+    "position": "Midfielder",
+    "nationality": "Portugal",
+    "number": 28
+  },
+  {
+    "_id": { "$oid": "971f25ef421e9ce0d4cbf20f" },
+    "name": "Diogo Maia",
+    "age": 27,
+    "position": "Forward",
+    "nationality": "Portugal",
+    "number": 66
+  },
+  {
+    "_id": { "$oid": "15e9631e63c6bc83280e51bc" },
+    "name": "Norberto Borges",
+    "age": 40,
+    "position": "Forward",
+    "nationality": "Portugal",
+    "number": 75
+  },
+  {
+    "_id": { "$oid": "2c4f82362434f37b424c39b3" },
+    "name": "Miguel Macedo",
+    "age": 32,
+    "position": "Forward",
+    "nationality": "Portugal",
+    "number": 73
+  },
+  {
+    "_id": { "$oid": "67fe438103bacc4f06cecc9e" },
+    "name": "Declan Bogan MD",
+    "age": 38,
+    "position": "Goalkeeper",
+    "nationality": "Australia",
+    "number": 67
+  },
+  {
+    "_id": { "$oid": "a2595f6e933f14a410f1f805" },
+    "name": "Jesse Marks I",
+    "age": 32,
+    "position": "Defender",
+    "nationality": "Australia",
+    "number": 79
+  },
+  {
+    "_id": { "$oid": "7f32f49fcac271b15b515a3a" },
+    "name": "Eli West-Cruickshank",
+    "age": 29,
+    "position": "Defender",
+    "nationality": "Australia",
+    "number": 43
+  },
+  {
+    "_id": { "$oid": "95870aa7a105d9dc7d7ab723" },
+    "name": "Dr. Callum Mann",
+    "age": 35,
+    "position": "Defender",
+    "nationality": "Australia",
+    "number": 21
+  },
+  {
+    "_id": { "$oid": "e4e9a40fb72fa1fcc3e0aab9" },
+    "name": "Ashton Harris",
+    "age": 29,
+    "position": "Defender",
+    "nationality": "Australia",
+    "number": 4
+  },
+  {
+    "_id": { "$oid": "fd9c5c4f26ae7e9748fcc7d5" },
+    "name": "Nathan Armstrong",
+    "age": 40,
+    "position": "Defender",
+    "nationality": "Australia",
+    "number": 83
+  },
+  {
+    "_id": { "$oid": "68f672e777d77d1612c70db7" },
+    "name": "Matthew Hoppe",
+    "age": 30,
+    "position": "Midfielder",
+    "nationality": "Australia",
+    "number": 76
+  },
+  {
+    "_id": { "$oid": "6806c113d983b9d64829c769" },
+    "name": "Mr. Beau Bailey",
+    "age": 37,
+    "position": "Midfielder",
+    "nationality": "Australia",
+    "number": 65
+  },
+  {
+    "_id": { "$oid": "1980a5c287a5f125279ea883" },
+    "name": "Jack Mitchell I",
+    "age": 30,
+    "position": "Midfielder",
+    "nationality": "Australia",
+    "number": 74
+  },
+  {
+    "_id": { "$oid": "d37caed9c6835b17b2e831bb" },
+    "name": "David Hermann",
+    "age": 34,
+    "position": "Midfielder",
+    "nationality": "Australia",
+    "number": 67
+  },
+  {
+    "_id": { "$oid": "1c0cd499a162cd2377336c4d" },
+    "name": "Jordan O'Neill",
+    "age": 36,
+    "position": "Midfielder",
+    "nationality": "Australia",
+    "number": 1
+  },
+  {
+    "_id": { "$oid": "28ba9ec83fdef12cb61ab1e6" },
+    "name": "Ashton Boyer",
+    "age": 27,
+    "position": "Midfielder",
+    "nationality": "Australia",
+    "number": 47
+  },
+  {
+    "_id": { "$oid": "ba7770fcfb9d92a665a87e1d" },
+    "name": "Michael Johnson",
+    "age": 38,
+    "position": "Forward",
+    "nationality": "Australia",
+    "number": 71
+  },
+  {
+    "_id": { "$oid": "1cc02a9901a95e582428980e" },
+    "name": "Cody Ward",
+    "age": 26,
+    "position": "Forward",
+    "nationality": "Australia",
+    "number": 58
+  },
+  {
+    "_id": { "$oid": "a9a4bbebd34aba9e59a0148a" },
+    "name": "Ethan Rohan",
+    "age": 28,
+    "position": "Forward",
+    "nationality": "Australia",
+    "number": 31
+  }
+]

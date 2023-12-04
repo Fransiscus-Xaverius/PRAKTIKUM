@@ -1,0 +1,1929 @@
+[
+  {
+    "_id": { "$oid": "1602d34842046d6288d8ebeb" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 4,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "7a893a70e7d0427b78c7663e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "d62eaed6a2e06dd36165cebc" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "da9e8df38a5d10ba55e6018b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "b54fbb8317a73ec84847c919" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "afe0bed876948634050288e1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "203e7b3e4f3ea5e0fdcd7959" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "1a0ab50eb4b5651bc0d513c9" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "741de8421f6fdb324a7ee9bd" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "f6fafd8a70fa0ca92c5f6f85" }
+      }
+    ],
+    "matchTime": "2020-01-26T15:05:02.885Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "a9e6f515141c27bcef0e08df" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 1,
+    "score_away": 2,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "9417af198055a1b295320c26" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "203e7b3e4f3ea5e0fdcd7959" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8ec1b924ace3e13613d0bb6a" }
+      }
+    ],
+    "matchTime": "2020-01-01T16:33:33.455Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "ad1bcbb417755dd07b11be79" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 5,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "347ed68ba0984ed804445868" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "74ff9fac920facb188232777" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "d2deb989a6acca21692876d2" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "1a0ab50eb4b5651bc0d513c9" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "203e7b3e4f3ea5e0fdcd7959" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "354b091c3cbaa93a4945c358" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "785740d472bd9a7d7093b32b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "00b7320317baf1d1998bec94" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "d8e411f90d15734372979b07" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "24fc162d27ce84fe9c591f1c" }
+      }
+    ],
+    "matchTime": "2020-01-16T20:43:52.861Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "19ee7b7f6c11ee78131e242c" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 1,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "c0f884f94561f6d06faf1ab3" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "77f49187944067bac2a09010" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0498350a42aed10133f94fa0" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0a907454eaccca9be8f25090" }
+      }
+    ],
+    "matchTime": "2020-02-11T21:34:56.293Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "1a9dd49746be3430db7af85e" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 1,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "318cc1698ed79dde56134995" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "f4966850c0959a04f4b129f8" }
+      }
+    ],
+    "matchTime": "2020-02-03T15:49:15.561Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "0b9e7400ed410c4133297eec" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 4,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "203e7b3e4f3ea5e0fdcd7959" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "741de8421f6fdb324a7ee9bd" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "b8422b5960b8379ac68c67a5" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "741de8421f6fdb324a7ee9bd" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "24dadd91c78c1c5669d5dab8" }
+      }
+    ],
+    "matchTime": "2020-02-02T20:29:53.580Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "c43b965ab6a126a5c30ec54a" },
+    "team_home": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 0,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "7f32f49fcac271b15b515a3a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "67fe438103bacc4f06cecc9e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "a9a4bbebd34aba9e59a0148a" }
+      }
+    ],
+    "matchTime": "2020-01-04T23:20:44.932Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "e7ae7c206538558180bc54dd" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 0,
+    "score_away": 0,
+    "logs": [],
+    "matchTime": "2020-02-04T00:44:56.364Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "dc3798b8889640528f7678b9" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 4,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "f6fafd8a70fa0ca92c5f6f85" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "da9e8df38a5d10ba55e6018b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "b54fbb8317a73ec84847c919" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "86c36140c98d334d2bbe4cdf" }
+      }
+    ],
+    "matchTime": "2020-02-10T22:45:49.477Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "ad642843c69eee00251af96e" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 1,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "8bd7df3e0898fbe5410e290b" }
+      }
+    ],
+    "matchTime": "2020-03-04T06:50:28.351Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "02cf0fd0fc2ac8b1d27f9fdf" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 4,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "a88e1d390d175d2fccae238c" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "71cac1287b81bd3777788cb1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "8bd7df3e0898fbe5410e290b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "86c36140c98d334d2bbe4cdf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "753e96d906c4a91485b86e3f" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "753e96d906c4a91485b86e3f" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "2cabd1f4af87f3edb606b926" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "98b45b4766afa0aa1c085914" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "bb4296abb3bd9d5ae869d935" }
+      }
+    ],
+    "matchTime": "2020-01-13T22:01:00.717Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "cfb7ae4b6112fd8c34579faf" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 3,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "49753a8dee323e379f21341e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "67dda7ea42f212446acbae46" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "753e96d906c4a91485b86e3f" }
+      }
+    ],
+    "matchTime": "2020-03-09T07:25:40.715Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "44141bec40652bbc61d3b7ea" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 0,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "fda257122fae2248f7d04daf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "2dd9f04626787b3a8e05256c" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "971f25ef421e9ce0d4cbf20f" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "2c4f82362434f37b424c39b3" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "2c4f82362434f37b424c39b3" }
+      }
+    ],
+    "matchTime": "2020-02-04T04:06:44.680Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "c13606b740245fd7071d446c" },
+    "team_home": { "$oid": "d02c269c03952151600c3570" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 1,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "753e96d906c4a91485b86e3f" }
+      }
+    ],
+    "matchTime": "2020-02-23T03:53:45.789Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "3f5b76d6add6994957351a59" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 1,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "afe0bed876948634050288e1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "203e7b3e4f3ea5e0fdcd7959" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "699aec9097b50c99a09248e1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "7e108f121bd065abfeaeb209" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "cd7698b7099c483a81faf5e4" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "c0f884f94561f6d06faf1ab3" }
+      }
+    ],
+    "matchTime": "2020-02-22T00:16:23.930Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "aa63501d062fff10920c26d7" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 2,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "753e96d906c4a91485b86e3f" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8f0a4c47fd06f5e1b63a002e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "14832d9338234f52ff7063d6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "86c36140c98d334d2bbe4cdf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "4edb41e50b1511dac806aff9" }
+      }
+    ],
+    "matchTime": "2020-03-27T18:40:50.814Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "bfddb9e86ce690d0439da25a" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 3,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "3a6ef94f9e119ae4cb5c66bd" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "738f31eccd3d11cae7497d44" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "27d8904cbf072a31dd9ce894" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "b53a0ec2155de9aa37f2def0" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8ec1b924ace3e13613d0bb6a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "24fc162d27ce84fe9c591f1c" }
+      }
+    ],
+    "matchTime": "2020-03-16T17:40:37.753Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "e4e2d2ea49d1fbc38801efab" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 5,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0498350a42aed10133f94fa0" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "01ae837642d3ffd7c721c55b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "01ae837642d3ffd7c721c55b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8ec1b924ace3e13613d0bb6a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "9417af198055a1b295320c26" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8ec1b924ace3e13613d0bb6a" }
+      }
+    ],
+    "matchTime": "2020-01-12T06:38:42.061Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "bed85dda2ee03af124614c60" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 5,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "00b23f0346b8346895bc0fc8" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "6f796ae312315e904e2cbd6e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "14832d9338234f52ff7063d6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "27d8904cbf072a31dd9ce894" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "b53a0ec2155de9aa37f2def0" }
+      }
+    ],
+    "matchTime": "2020-03-06T21:23:16.077Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "cc79e06841b248bd2497aa3a" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 1,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "7e108f121bd065abfeaeb209" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "971f25ef421e9ce0d4cbf20f" }
+      }
+    ],
+    "matchTime": "2020-03-17T15:18:25.665Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "4e34bbca8700ec6d5d45d6d9" },
+    "team_home": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 4,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "00b23f0346b8346895bc0fc8" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "891e75d8abcb0df624936218" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "7e108f121bd065abfeaeb209" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "00b23f0346b8346895bc0fc8" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      }
+    ],
+    "matchTime": "2020-02-06T17:19:16.613Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "960dabf6dabb824fcf39c5fb" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 2,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "354b091c3cbaa93a4945c358" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "347ed68ba0984ed804445868" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "78c665531f6a9cc475d184e0" }
+      }
+    ],
+    "matchTime": "2020-03-10T08:07:01.747Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "a017cc7e757a48cf9a2d7e56" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 5,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "d1982e0b5885b8a05c290624" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "77a7841419d39e1e89cb3347" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "98155e1b52c73da8bbaaf004" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "9b3dc15303aabbb226139e13" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "9b3dc15303aabbb226139e13" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "626b2891e3d8d9d27447243a" }
+      }
+    ],
+    "matchTime": "2020-01-20T21:14:07.805Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "83a63fd590515f16544ab937" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 2,
+    "score_away": 2,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8ec1b924ace3e13613d0bb6a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "14832d9338234f52ff7063d6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "b5cebcf5363d11147d68d5a2" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "b1068262cfa35a8a99122ade" }
+      }
+    ],
+    "matchTime": "2020-02-28T12:21:08.724Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "e6711f6cdf2e7954900275f7" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 3,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "b1068262cfa35a8a99122ade" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "785740d472bd9a7d7093b32b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "9b3dc15303aabbb226139e13" }
+      }
+    ],
+    "matchTime": "2020-03-27T02:55:20.242Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "c7150aecfdc39412d091a34a" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 2,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "785bcfc31bd755e2d6b024b1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "77a7841419d39e1e89cb3347" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "9b3dc15303aabbb226139e13" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "ae40233547680999461b0426" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "9506bafa4ca7ee8215041349" }
+      }
+    ],
+    "matchTime": "2020-02-24T14:12:28.124Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "b1f62237010e4199d9feec96" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 3,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "9b3dc15303aabbb226139e13" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "77a7841419d39e1e89cb3347" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "b5cebcf5363d11147d68d5a2" }
+      }
+    ],
+    "matchTime": "2020-03-09T07:18:13.071Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "52ec967c563b0f22698a4867" },
+    "team_home": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 0,
+    "score_away": 0,
+    "logs": [],
+    "matchTime": "2020-03-02T21:37:13.981Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "901ff0db7a17a9679ed19ab3" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 4,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "ffae41e2796493869c4ba03b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "ffae41e2796493869c4ba03b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "bb4296abb3bd9d5ae869d935" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "71cac1287b81bd3777788cb1" }
+      }
+    ],
+    "matchTime": "2020-03-10T01:35:01.411Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "7de6bd4e4d989179ad37e2ae" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 5,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "49753a8dee323e379f21341e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "da9e8df38a5d10ba55e6018b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "ffae41e2796493869c4ba03b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "ffae41e2796493869c4ba03b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "d4cac9784616fa84141caeec" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0a907454eaccca9be8f25090" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "8a3b0c1acc22c827aa7bd371" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "33aa93b5cbc6f40ff05db227" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "49753a8dee323e379f21341e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "3609ee48e72a05b43308be43" }
+      }
+    ],
+    "matchTime": "2020-02-10T11:33:35.637Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "fb2c823ffb12a0cf9d2b3eee" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 5,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8ec1b924ace3e13613d0bb6a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "d4cac9784616fa84141caeec" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "71cac1287b81bd3777788cb1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "fc17d19519454c8f610b80b6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "d4cac9784616fa84141caeec" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "2cabd1f4af87f3edb606b926" }
+      }
+    ],
+    "matchTime": "2020-01-18T21:22:34.281Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "7862035dac1c79117b24593d" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 4,
+    "score_away": 4,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "98155e1b52c73da8bbaaf004" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "98155e1b52c73da8bbaaf004" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "a88e1d390d175d2fccae238c" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "9884f57388075c80c7cb84d6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "77f49187944067bac2a09010" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "bb4296abb3bd9d5ae869d935" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "d8e411f90d15734372979b07" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "00b7320317baf1d1998bec94" }
+      }
+    ],
+    "matchTime": "2020-03-18T20:43:50.418Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "2359662d1d4ec47466dfc40f" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 5,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0498350a42aed10133f94fa0" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "ffae41e2796493869c4ba03b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "ffae41e2796493869c4ba03b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "fc17d19519454c8f610b80b6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "77f49187944067bac2a09010" }
+      }
+    ],
+    "matchTime": "2020-01-26T10:26:27.785Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "95ac5f17308766cd26155896" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 1,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "80be01b8554fffb79ead46e1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "52fb271b214f1e738ceba022" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "77f49187944067bac2a09010" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "0a0e4509452d1c593bc547f7" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "6d9d1284d71354bdf61aaf3a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "0a0e4509452d1c593bc547f7" }
+      }
+    ],
+    "matchTime": "2020-03-27T03:08:53.076Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "60fd9b7a88269cfdabc6c563" },
+    "team_home": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 3,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "bb4296abb3bd9d5ae869d935" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "2cabd1f4af87f3edb606b926" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "71cac1287b81bd3777788cb1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "1c0cd499a162cd2377336c4d" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "ba7770fcfb9d92a665a87e1d" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "ba7770fcfb9d92a665a87e1d" }
+      }
+    ],
+    "matchTime": "2020-01-14T08:10:28.642Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "0da2fdcca0c680838e183252" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 4,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "d2deb989a6acca21692876d2" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "9e10ff792fdc1f71dad88cfa" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "74ff9fac920facb188232777" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "74ff9fac920facb188232777" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "fdd8657fba2b6c2be167efdf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "3c24ebfd495d6eb5129e88f0" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "318cc1698ed79dde56134995" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "fdd8657fba2b6c2be167efdf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "f4966850c0959a04f4b129f8" }
+      }
+    ],
+    "matchTime": "2020-01-05T15:09:19.400Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "6a89efcaba6506776c62e58d" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 0,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "67dda7ea42f212446acbae46" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "86c36140c98d334d2bbe4cdf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "f6fafd8a70fa0ca92c5f6f85" }
+      }
+    ],
+    "matchTime": "2020-01-16T19:24:21.128Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "1435398d66fb30eba57085c4" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 3,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "7baaf8868c44ffff0305a4fa" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "a0fc480b91d4aad9960ac1d1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "3c24ebfd495d6eb5129e88f0" }
+      }
+    ],
+    "matchTime": "2020-01-13T16:44:52.165Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "a26cbc63ba21cc9eab8519da" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 2,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "554e36cc263c82a7588886ce" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "554e36cc263c82a7588886ce" }
+      }
+    ],
+    "matchTime": "2020-01-13T16:23:22.492Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "722b9ec954c21daaa058cf63" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 3,
+    "score_away": 2,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0498350a42aed10133f94fa0" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "318cc1698ed79dde56134995" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "ae40233547680999461b0426" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "bf51a0ebc8d58e39097872af" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "d42fab9df3baba7b971cbcf7" }
+      }
+    ],
+    "matchTime": "2020-03-18T02:27:25.074Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "18173a1e9c258b93dedc9854" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 0,
+    "score_away": 0,
+    "logs": [],
+    "matchTime": "2020-02-17T23:43:09.697Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "41f5a96fd2a9100b121d604e" },
+    "team_home": { "$oid": "991e13b28f275fcfa7b79973" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 4,
+    "score_away": 4,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "1c0cd499a162cd2377336c4d" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "7b5bdb836eaf1bc1bb207345" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "b69465bc5f3a67a562750925" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "9506bafa4ca7ee8215041349" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "bf51a0ebc8d58e39097872af" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "a9a4bbebd34aba9e59a0148a" }
+      }
+    ],
+    "matchTime": "2020-02-28T19:02:50.559Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "0e20e9627811440f93e14093" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 0,
+    "score_away": 0,
+    "logs": [],
+    "matchTime": "2020-02-27T09:45:34.797Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "ca2adf2c7724431be6dd1d4c" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 4,
+    "score_away": 3,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "d62eaed6a2e06dd36165cebc" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "fda257122fae2248f7d04daf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "c3e9367f994e9e9f5f847a82" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "24dadd91c78c1c5669d5dab8" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "80be01b8554fffb79ead46e1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "33aa93b5cbc6f40ff05db227" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "33aa93b5cbc6f40ff05db227" }
+      }
+    ],
+    "matchTime": "2020-01-11T09:46:27.093Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "99a6912aa5fa0392eccac57d" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 0,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "8f0a4c47fd06f5e1b63a002e" }
+      }
+    ],
+    "matchTime": "2020-03-12T11:32:44.988Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "ec7beec0041e9931e040da79" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 5,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "785740d472bd9a7d7093b32b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "d8e411f90d15734372979b07" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "de2d73b76736f8409780bb8f" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "737942dff8fd3fe53c9b40f4" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "6d9d1284d71354bdf61aaf3a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "2dd9f04626787b3a8e05256c" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "0a0e4509452d1c593bc547f7" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "785740d472bd9a7d7093b32b" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "347ed68ba0984ed804445868" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "626b2891e3d8d9d27447243a" }
+      }
+    ],
+    "matchTime": "2020-01-10T05:40:27.791Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "5e7f14fa6c104a05a148efe5" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 4,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "d4cac9784616fa84141caeec" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "71cac1287b81bd3777788cb1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "98b45b4766afa0aa1c085914" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "0a0e4509452d1c593bc547f7" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "2e72b3791b193d1a3ccc090a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "15e9631e63c6bc83280e51bc" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "c3e9367f994e9e9f5f847a82" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "0a907454eaccca9be8f25090" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "8a3b0c1acc22c827aa7bd371" }
+      }
+    ],
+    "matchTime": "2020-02-15T12:11:16.762Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "c41a92b034f9562bc309697d" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 3,
+    "score_away": 2,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "318cc1698ed79dde56134995" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "fda257122fae2248f7d04daf" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "c3e9367f994e9e9f5f847a82" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "528cbd09f02630f177349715" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "991e13b28f275fcfa7b79973" },
+        "player": { "$oid": "9506bafa4ca7ee8215041349" }
+      }
+    ],
+    "matchTime": "2020-01-23T07:54:10.730Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "b84bc2abc632bceb76267761" },
+    "team_home": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "team_away": { "$oid": "1dedbf86dc66cced2518616e" },
+    "score_home": 2,
+    "score_away": 4,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "fd9c5c4f26ae7e9748fcc7d5" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "528cbd09f02630f177349715" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+        "player": { "$oid": "2c4f82362434f37b424c39b3" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "95870aa7a105d9dc7d7ab723" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "a9a4bbebd34aba9e59a0148a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "d37caed9c6835b17b2e831bb" }
+      }
+    ],
+    "matchTime": "2020-03-07T20:07:57.103Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "7ecf97fe89f06f8e36c8186e" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "b970a8016a60fd877c1e86b9" },
+    "score_home": 0,
+    "score_away": 5,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "1a0ab50eb4b5651bc0d513c9" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "f4966850c0959a04f4b129f8" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "699aec9097b50c99a09248e1" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "d1a895cd588b2fb7b8e2e0aa" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "b970a8016a60fd877c1e86b9" },
+        "player": { "$oid": "74ff9fac920facb188232777" }
+      }
+    ],
+    "matchTime": "2020-01-20T07:17:00.426Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "dafb934c32d64bfc5a7e1b4a" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "d02c269c03952151600c3570" },
+    "score_home": 0,
+    "score_away": 4,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "f6fafd8a70fa0ca92c5f6f85" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "49753a8dee323e379f21341e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "d1982e0b5885b8a05c290624" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d02c269c03952151600c3570" },
+        "player": { "$oid": "33aa93b5cbc6f40ff05db227" }
+      }
+    ],
+    "matchTime": "2020-03-13T23:51:09.283Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "39cc51d8c39aab8ef8015092" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "2d5c06e9141a7c921d46f800" },
+    "score_home": 5,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "95870aa7a105d9dc7d7ab723" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "1980a5c287a5f125279ea883" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "a9a4bbebd34aba9e59a0148a" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "e4e9a40fb72fa1fcc3e0aab9" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "1980a5c287a5f125279ea883" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "2d5c06e9141a7c921d46f800" },
+        "player": { "$oid": "129305c371c64a5d82509f9c" }
+      }
+    ],
+    "matchTime": "2020-02-04T22:56:16.237Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "4bd0c14ff9c5b19ea971c7ec" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "97c9c1056efe4a384b8aee80" },
+    "score_home": 1,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "97c9c1056efe4a384b8aee80" },
+        "player": { "$oid": "00b7320317baf1d1998bec94" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "28ba9ec83fdef12cb61ab1e6" }
+      }
+    ],
+    "matchTime": "2020-03-23T18:56:10.731Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "48c2684b391ae52f08fcd39c" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+    "score_home": 5,
+    "score_away": 1,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "d37caed9c6835b17b2e831bb" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "67fe438103bacc4f06cecc9e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "1c0cd499a162cd2377336c4d" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "a2595f6e933f14a410f1f805" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "d3cd4bdb3b492a19228f4c86" },
+        "player": { "$oid": "fc17d19519454c8f610b80b6" }
+      }
+    ],
+    "matchTime": "2020-02-07T18:11:18.079Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "aa6a4b2fd0183e6755d14c5e" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "991e13b28f275fcfa7b79973" },
+    "score_home": 2,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "28ba9ec83fdef12cb61ab1e6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "6806c113d983b9d64829c769" }
+      }
+    ],
+    "matchTime": "2020-01-30T04:26:36.112Z",
+    "round": "preliminary"
+  },
+  {
+    "_id": { "$oid": "d0038da31bd01cd52e80d4fe" },
+    "team_home": { "$oid": "1dedbf86dc66cced2518616e" },
+    "team_away": { "$oid": "1c38b88bbfd5e9536f5e9742" },
+    "score_home": 5,
+    "score_away": 0,
+    "logs": [
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "1980a5c287a5f125279ea883" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "fd9c5c4f26ae7e9748fcc7d5" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "67fe438103bacc4f06cecc9e" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "28ba9ec83fdef12cb61ab1e6" }
+      },
+      {
+        "event": "goal",
+        "team": { "$oid": "1dedbf86dc66cced2518616e" },
+        "player": { "$oid": "e4e9a40fb72fa1fcc3e0aab9" }
+      }
+    ],
+    "matchTime": "2020-01-01T03:43:54.687Z",
+    "round": "preliminary"
+  }
+]

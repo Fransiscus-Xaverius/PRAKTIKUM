@@ -1,0 +1,11 @@
+<username>
+<email>
+<password>
+
+fransiscusxaverius
+hayo@gmail.com
+123
+
+HIMAFOR iSTTS
+himafor@istts.ac.id
+hima
