@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PublishFragment" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Post a new topic"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/topicTitleEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Topic Title"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="70dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp" />
+
+    <EditText
+        android:id="@+id/topicContentTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Topic Content"
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:padding="15dp" />
+
+    <Button
+        android:id="@+id/publishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:text="Publish" />
+
+</LinearLayout>
